@@ -9,7 +9,7 @@ prompts:
     hint: 'port for your instance(your doris fe query_port)'
   schema:
     default: 'dbt'
-    hint: 'the schema name as stored in the database,doris have not 'schema' to make a collection of table or view'
+    hint: 'the schema name as stored in the database,doris have not schema to make a collection of table or view'
   username:
     hint: 'your doris username'
   password:

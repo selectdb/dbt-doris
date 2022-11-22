@@ -1,11 +1,17 @@
+from typing import Optional
+
 import mysql.connector
 
 from contextlib import contextmanager
 from dataclasses import dataclass
 import dbt.exceptions # noqa
+from dbt.contracts.connection import ConnectionState, AdapterResponse
+
+from dbt import exceptions
 from dbt.adapters.base import Credentials
 
 from dbt.adapters.sql import SQLConnectionManager as connection_cls
+from dbt.events import AdapterLogger
 
 from dbt.logger import GLOBAL_LOGGER as logger
 

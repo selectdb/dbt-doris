@@ -5,6 +5,7 @@ from dbt.tests.adapter.basic.test_singular_tests import BaseSingularTests
 from dbt.tests.adapter.basic.test_singular_tests_ephemeral import (
     BaseSingularTestsEphemeral
 )
+from dbt.tests.util import run_dbt, check_relations_equal
 from dbt.tests.adapter.basic.test_empty import BaseEmpty
 from dbt.tests.adapter.basic.test_ephemeral import BaseEphemeral
 from dbt.tests.adapter.basic.test_incremental import BaseIncremental
