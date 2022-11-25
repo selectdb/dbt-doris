@@ -27,6 +27,7 @@
     {{ doris__partition_by() }}
     {{ doris__distributed_by() }}
     {{ doris__properties() }} as {{ sql }};
+      {{ print("Runn00111000me_macrcreatetablel: "~ sql) }}
 
 {%- endmacro %}
 
@@ -39,5 +40,6 @@
     {{ doris__partition_by() }}
     {{ doris__distributed_by() }}
     {{ doris__properties() }} as {{ sql }};
+      {{ print("Runn00111000me_createuniquellll: "~ sql) }}
 
 {%- endmacro %}

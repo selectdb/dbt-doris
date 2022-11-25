@@ -17,8 +17,13 @@
 
 {% macro doris__engine() -%}
     {% set label = 'ENGINE' %}
-    {% set engine = config.get('engine', 'OLAP', validator=validation.any[basestring]) %}
+    {{ print(config) }}
+        {{ print("Runn00000000me_macro: ") }}
+    {{ print("Runn00000000me_macro1: "~ config.get('engine', 'OLAP')) }}
+    {% set engine = config.get('engine', 'OLAP') %}
+            {{ print("Runn00000000me_macro: ") }}
     {{ label }} = {{ engine }}
+                {{ print("Runn00000000me_macro1111: ") }}
 {%- endmacro %}
 
 {% macro doris__partition_by() -%}
@@ -71,6 +76,7 @@
   {% if cols is none and engine in [none,'OLAP'] %}
     {% set cols = column_names %}
   {% endif %}
+      {{ print("Runn00111000me_macro1: "~ cols) }}
   {% if cols  %}
     {{ label }} (
       {% for item in cols %}
