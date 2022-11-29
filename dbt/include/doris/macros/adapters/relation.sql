@@ -1,29 +1,7 @@
--- Licensed to the Apache Software Foundation (ASF) under one
--- or more contributor license agreements. See the NOTICE file
--- distributed with this work for additional information
--- regarding copyright ownership. The ASF licenses this file
--- to you under the Apache License, Version 2.0 (the
--- "License"); you may not use this file except in compliance
--- with the License. You may obtain a copy of the License at
---
--- http://www.apache.org/licenses/LICENSE-2.0
---
--- Unless required by applicable law or agreed to in writing,
--- software distributed under the License is distributed on an
--- "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
--- KIND, either express or implied. See the License for the
--- specific language governing permissions and limitations
--- under the License.
-
 {% macro doris__engine() -%}
     {% set label = 'ENGINE' %}
-    {{ print(config) }}
-        {{ print("Runn00000000me_macro: ") }}
-    {{ print("Runn00000000me_macro1: "~ config.get('engine', 'OLAP')) }}
     {% set engine = config.get('engine', 'OLAP') %}
-            {{ print("Runn00000000me_macro: ") }}
     {{ label }} = {{ engine }}
-                {{ print("Runn00000000me_macro1111: ") }}
 {%- endmacro %}
 
 {% macro doris__partition_by() -%}
@@ -76,7 +54,6 @@
   {% if cols is none and engine in [none,'OLAP'] %}
     {% set cols = column_names %}
   {% endif %}
-      {{ print("Runn00111000me_macro1: "~ cols) }}
   {% if cols  %}
     {{ label }} (
       {% for item in cols %}

@@ -19,7 +19,6 @@
     {{ doris__distributed_by(agate_table.column_names[0:1]) }}
     {{ doris__properties() }}
     {% endset %}
-      {{ print("Runn00111000me_macrossssqqqllll: "~ sql) }}
 
     {% call statement('_') %}
     {{ sql }}
