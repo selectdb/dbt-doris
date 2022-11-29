@@ -11,7 +11,7 @@ setup(
     version=package_version,
     description=description,
     long_description=description,
-    author="catpineapple",
+    author="long2ice,catpineapple",
     author_email="1391869588@qq.com",
     url="https://github.com/selectdb/dbt-doris.git",
     packages=find_namespace_packages(include=["dbt", "dbt.*"]),
