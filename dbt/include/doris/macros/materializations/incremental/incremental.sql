@@ -1,9 +1,6 @@
 {% materialization incremental, adapter='doris' %}
   {% set unique_key = config.get('unique_key', validator=validation.any[list]) %}
-  {% if unique_key is none %}
-    {%- set columns = adapter.get_columns_in_relation(this) -%}
-    unique_key[0] = columns[0]
-  {% endif %}
+  {%- set inserts_only = config.get('inserts_only') -%}
 
   {% set target_relation = this.incorporate(type='table') %}
 
@@ -16,7 +13,10 @@
   {{ run_hooks(pre_hooks, inside_transaction=True) }}
 
   {% set to_drop = [] %}
-  {% if existing_relation is none %}
+
+  {% if unique_key is none or inserts_only  %}
+        {% set build_sql = tmp_insert(tmp_relation, target_relation, unique_key=none) %}
+  {% elif existing_relation is none %}
       {% set build_sql = doris__create_unique_table_as(False, target_relation, sql) %}
   {% elif existing_relation.is_view or should_full_refresh() %}
       {#-- Make sure the backup doesn't exist so we don't encounter issues with the rename below #}
@@ -35,15 +35,12 @@
       {% if not is_unique_model(table_create_obj) %}
             {% do exceptions.raise_compiler_error("doris table:"~ target_relation ~ ", model must be 'UNIQUE'" ) %}
       {% endif %}
-      {% set tmp_relation = make_temp_relation(target_relation) %}
       {% do run_query(create_table_as(True, tmp_relation, sql)) %}
+      {% do to_drop.append(tmp_relation) %}
+
       {% do adapter.expand_target_column_types(
              from_relation=tmp_relation,
              to_relation=target_relation) %}
-      {% set build_sql_del = tmp_delete(tmp_relation, target_relation, unique_key=unique_key, statement_name="pre_main") %}
-      {% call statement("pre_main") %}
-          {{ build_sql_del }}
-      {% endcall %}
       {% set build_sql = tmp_insert(tmp_relation, target_relation, unique_key=unique_key) %}
   {% endif %}
 
@@ -56,7 +53,7 @@
   {{ run_hooks(post_hooks, inside_transaction=True) }}
   {% do adapter.commit() %}
   {% for rel in to_drop %}
-      {% do adapter.drop_relation(rel) %}
+      {% do doris__drop_relation(rel) %}
   {% endfor %}
   {{ run_hooks(post_hooks, inside_transaction=False) }}
   {{ return({'relations': [target_relation]}) }}

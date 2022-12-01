@@ -75,8 +75,12 @@
 {%- endmacro%}
 
 {% macro doris__drop_relation(relation) -%}
+    {% set relation_type = relation.type %}
+    {% if relation_type is none %}
+        {% set relation_type = 'table' %}
+    {% endif %}
     {% call statement('drop_relation', auto_begin=False) %}
-    drop {{ relation.type }} if exists {{ relation }}
+    drop {{ relation_type }} if exists {{ relation }}
     {% endcall %}
 {%- endmacro %}
 
