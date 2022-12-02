@@ -1,0 +1,429 @@
+2022-12-02 06:45:16.847055 (MainThread): 06:45:16.846862 [debug] [MainThread]: Connection '_test' was properly closed.
+2022-12-02 06:45:16.856580 (MainThread): 
+
+============================== 2022-12-02 06:45:16.856390 | 70e83a63-c44e-47fa-a6f3-9f3316831a10 ==============================
+06:45:16.856400 [info ] [MainThread]: Running with dbt=1.3.1
+2022-12-02 06:45:16.856856 (MainThread): 06:45:16  Running with dbt=1.3.1
+2022-12-02 06:45:16.857148 (MainThread): 06:45:16.856998 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/tmp/pytest-of-hdc/pytest-84/profile4', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+2022-12-02 06:45:16.857406 (MainThread): 06:45:16.857272 [debug] [MainThread]: Tracking: do not track
+2022-12-02 06:45:16.869001 (MainThread): 06:45:16.868823 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+2022-12-02 06:45:16.869275 (MainThread): 06:45:16  Partial parse save file not found. Starting full parse.
+2022-12-02 06:45:16.885328 (MainThread): 06:45:16.884777 [debug] [MainThread]: Parsing macros/materializations/incremental/help.sql
+2022-12-02 06:45:16.891953 (MainThread): 06:45:16.891772 [debug] [MainThread]: Parsing macros/materializations/incremental/incremental.sql
+2022-12-02 06:45:16.900847 (MainThread): 06:45:16.900653 [debug] [MainThread]: Parsing macros/materializations/view/create_view_as.sql
+2022-12-02 06:45:16.902024 (MainThread): 06:45:16.901851 [debug] [MainThread]: Parsing macros/materializations/seed/helpers.sql
+2022-12-02 06:45:16.905994 (MainThread): 06:45:16.905816 [debug] [MainThread]: Parsing macros/materializations/table/create_table_as.sql
+2022-12-02 06:45:16.909678 (MainThread): 06:45:16.909500 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot.sql
+2022-12-02 06:45:16.928258 (MainThread): 06:45:16.928074 [debug] [MainThread]: Parsing macros/materializations/snapshot/strategies.sql
+2022-12-02 06:45:16.929353 (MainThread): 06:45:16.929180 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-12-02 06:45:16.931733 (MainThread): 06:45:16.931550 [debug] [MainThread]: Parsing macros/materializations/partition/replace.sql
+2022-12-02 06:45:16.933201 (MainThread): 06:45:16.933029 [debug] [MainThread]: Parsing macros/materializations/partition/helpers.sql
+2022-12-02 06:45:16.941220 (MainThread): 06:45:16.941041 [debug] [MainThread]: Parsing macros/materializations/partition/partition.sql
+2022-12-02 06:45:16.952950 (MainThread): 06:45:16.952769 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+2022-12-02 06:45:16.953553 (MainThread): 06:45:16.953390 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+2022-12-02 06:45:16.955262 (MainThread): 06:45:16.955087 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+2022-12-02 06:45:16.977705 (MainThread): 06:45:16.977507 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+2022-12-02 06:45:16.979570 (MainThread): 06:45:16.979391 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+2022-12-02 06:45:16.984144 (MainThread): 06:45:16.983967 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+2022-12-02 06:45:16.985280 (MainThread): 06:45:16.985110 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+2022-12-02 06:45:16.986228 (MainThread): 06:45:16.986059 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+2022-12-02 06:45:16.987481 (MainThread): 06:45:16.987306 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+2022-12-02 06:45:16.989173 (MainThread): 06:45:16.988999 [debug] [MainThread]: Parsing macros/python_model/python.sql
+2022-12-02 06:45:16.995935 (MainThread): 06:45:16.995754 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+2022-12-02 06:45:17.000341 (MainThread): 06:45:17.000162 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+2022-12-02 06:45:17.003108 (MainThread): 06:45:17.002928 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+2022-12-02 06:45:17.010896 (MainThread): 06:45:17.010716 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+2022-12-02 06:45:17.031246 (MainThread): 06:45:17.031055 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+2022-12-02 06:45:17.033429 (MainThread): 06:45:17.033249 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+2022-12-02 06:45:17.038483 (MainThread): 06:45:17.038294 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+2022-12-02 06:45:17.040586 (MainThread): 06:45:17.040410 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+2022-12-02 06:45:17.053316 (MainThread): 06:45:17.053130 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+2022-12-02 06:45:17.070896 (MainThread): 06:45:17.070708 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-12-02 06:45:17.072856 (MainThread): 06:45:17.072673 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+2022-12-02 06:45:17.086570 (MainThread): 06:45:17.086389 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+2022-12-02 06:45:17.094489 (MainThread): 06:45:17.094308 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+2022-12-02 06:45:17.105843 (MainThread): 06:45:17.105656 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-12-02 06:45:17.123505 (MainThread): 06:45:17.123320 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+2022-12-02 06:45:17.139829 (MainThread): 06:45:17.139632 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-12-02 06:45:17.148759 (MainThread): 06:45:17.148569 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-12-02 06:45:17.150598 (MainThread): 06:45:17.150422 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-12-02 06:45:17.154596 (MainThread): 06:45:17.154413 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+2022-12-02 06:45:17.157309 (MainThread): 06:45:17.157129 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+2022-12-02 06:45:17.158935 (MainThread): 06:45:17.158760 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+2022-12-02 06:45:17.164927 (MainThread): 06:45:17.164745 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+2022-12-02 06:45:17.169025 (MainThread): 06:45:17.168847 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+2022-12-02 06:45:17.175138 (MainThread): 06:45:17.174958 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+2022-12-02 06:45:17.176728 (MainThread): 06:45:17.176548 [debug] [MainThread]: Parsing macros/utils/replace.sql
+2022-12-02 06:45:17.178290 (MainThread): 06:45:17.178114 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+2022-12-02 06:45:17.179683 (MainThread): 06:45:17.179509 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+2022-12-02 06:45:17.181278 (MainThread): 06:45:17.181106 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+2022-12-02 06:45:17.183656 (MainThread): 06:45:17.183477 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+2022-12-02 06:45:17.185079 (MainThread): 06:45:17.184904 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+2022-12-02 06:45:17.187787 (MainThread): 06:45:17.187602 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+2022-12-02 06:45:17.195299 (MainThread): 06:45:17.195122 [debug] [MainThread]: Parsing macros/utils/length.sql
+2022-12-02 06:45:17.196569 (MainThread): 06:45:17.196393 [debug] [MainThread]: Parsing macros/utils/concat.sql
+2022-12-02 06:45:17.197881 (MainThread): 06:45:17.197707 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+2022-12-02 06:45:17.199287 (MainThread): 06:45:17.199110 [debug] [MainThread]: Parsing macros/utils/position.sql
+2022-12-02 06:45:17.200686 (MainThread): 06:45:17.200511 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+2022-12-02 06:45:17.202579 (MainThread): 06:45:17.202402 [debug] [MainThread]: Parsing macros/utils/right.sql
+2022-12-02 06:45:17.203999 (MainThread): 06:45:17.203825 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+2022-12-02 06:45:17.205373 (MainThread): 06:45:17.205199 [debug] [MainThread]: Parsing macros/utils/except.sql
+2022-12-02 06:45:17.206501 (MainThread): 06:45:17.206327 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+2022-12-02 06:45:17.207885 (MainThread): 06:45:17.207706 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+2022-12-02 06:45:17.209271 (MainThread): 06:45:17.209099 [debug] [MainThread]: Parsing macros/utils/hash.sql
+2022-12-02 06:45:17.210675 (MainThread): 06:45:17.210503 [debug] [MainThread]: Parsing macros/utils/literal.sql
+2022-12-02 06:45:17.211927 (MainThread): 06:45:17.211753 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+2022-12-02 06:45:17.213045 (MainThread): 06:45:17.212873 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+2022-12-02 06:45:17.214449 (MainThread): 06:45:17.214270 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+2022-12-02 06:45:17.215818 (MainThread): 06:45:17.215636 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+2022-12-02 06:45:17.218258 (MainThread): 06:45:17.218082 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+2022-12-02 06:45:17.220079 (MainThread): 06:45:17.219903 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+2022-12-02 06:45:17.222987 (MainThread): 06:45:17.222808 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+2022-12-02 06:45:17.224917 (MainThread): 06:45:17.224739 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+2022-12-02 06:45:17.227313 (MainThread): 06:45:17.227135 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+2022-12-02 06:45:17.229914 (MainThread): 06:45:17.229722 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+2022-12-02 06:45:17.245949 (MainThread): 06:45:17.245767 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+2022-12-02 06:45:17.251018 (MainThread): 06:45:17.250834 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+2022-12-02 06:45:17.266399 (MainThread): 06:45:17.266211 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+2022-12-02 06:45:17.269573 (MainThread): 06:45:17.269390 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+2022-12-02 06:45:17.280414 (MainThread): 06:45:17.280232 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+2022-12-02 06:45:17.284324 (MainThread): 06:45:17.284147 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+2022-12-02 06:45:17.292247 (MainThread): 06:45:17.292068 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+2022-12-02 06:45:17.301945 (MainThread): 06:45:17.301760 [debug] [MainThread]: Parsing macros/etc/statement.sql
+2022-12-02 06:45:17.307864 (MainThread): 06:45:17.307677 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+2022-12-02 06:45:17.622840 (MainThread): 06:45:17.622554 [debug] [MainThread]: 1699: static parser successfully parsed table_model.sql
+2022-12-02 06:45:17.626160 (MainThread): 06:45:17.625969 [debug] [MainThread]: 1699: static parser successfully parsed view_model.sql
+2022-12-02 06:45:17.629318 (MainThread): 06:45:17.629124 [debug] [MainThread]: 1699: static parser successfully parsed ephemeral.sql
+2022-12-02 06:45:17.682668 (MainThread): 06:45:17.682451 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+2022-12-02 06:45:17.682966 (MainThread): 06:45:17  Found 3 models, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+2022-12-02 06:45:17.683917 (MainThread): 06:45:17.683735 [info ] [MainThread]: 
+2022-12-02 06:45:17.684177 (MainThread): 06:45:17  
+2022-12-02 06:45:17.684780 (MainThread): 06:45:17.684601 [debug] [MainThread]: Acquiring new doris connection "master"
+2022-12-02 06:45:17.686179 (ThreadPoolExecutor-13_0): 06:45:17.685783 [debug] [ThreadPool]: Acquiring new doris connection "list_"
+2022-12-02 06:45:17.688772 (ThreadPoolExecutor-13_0): 06:45:17.688568 [debug] [ThreadPool]: Using doris connection "list_"
+2022-12-02 06:45:17.689070 (ThreadPoolExecutor-13_0): 06:45:17.688929 [debug] [ThreadPool]: On list_: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "connection_name": "list_"} */
+select distinct schema_name from information_schema.schemata
+2022-12-02 06:45:17.689332 (ThreadPoolExecutor-13_0): 06:45:17.689192 [debug] [ThreadPool]: Opening a new connection, currently in state init
+2022-12-02 06:45:17.693076 (ThreadPoolExecutor-13_0): 06:45:17.692884 [debug] [ThreadPool]: SQL status: 9 rows affected in 0.0 seconds
+2022-12-02 06:45:17.694575 (ThreadPoolExecutor-13_0): 06:45:17.694396 [debug] [ThreadPool]: On list_: Close
+2022-12-02 06:45:17.696372 (ThreadPoolExecutor-14_0): 06:45:17.696103 [debug] [ThreadPool]: Acquiring new doris connection "list__test16699635166145722357_test_basic"
+2022-12-02 06:45:17.698801 (ThreadPoolExecutor-14_0): 06:45:17.698616 [debug] [ThreadPool]: Using doris connection "list__test16699635166145722357_test_basic"
+2022-12-02 06:45:17.699078 (ThreadPoolExecutor-14_0): 06:45:17.698941 [debug] [ThreadPool]: On list__test16699635166145722357_test_basic: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "connection_name": "list__test16699635166145722357_test_basic"} */
+
+    select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type end as table_type
+    from information_schema.tables
+    where table_schema = 'test16699635166145722357_test_basic'
+  
+2022-12-02 06:45:17.699338 (ThreadPoolExecutor-14_0): 06:45:17.699198 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+2022-12-02 06:45:17.706210 (ThreadPoolExecutor-14_0): 06:45:17.706037 [debug] [ThreadPool]: SQL status: 0 rows affected in 0.01 seconds
+2022-12-02 06:45:17.707526 (ThreadPoolExecutor-14_0): 06:45:17.707355 [debug] [ThreadPool]: On list__test16699635166145722357_test_basic: Close
+2022-12-02 06:45:17.708982 (MainThread): 06:45:17.708684 [info ] [MainThread]: Concurrency: 1 threads (target='default')
+2022-12-02 06:45:17.709295 (MainThread): 06:45:17  Concurrency: 1 threads (target='default')
+2022-12-02 06:45:17.709563 (MainThread): 06:45:17.709427 [info ] [MainThread]: 
+2022-12-02 06:45:17.709806 (MainThread): 06:45:17  
+2022-12-02 06:45:17.711137 (Thread-25): 06:45:17.710886 [debug] [Thread-25 ]: Began running node seed.ephemeral.base
+2022-12-02 06:45:17.711633 (Thread-25): 06:45:17.711461 [info ] [Thread-25 ]: 1 of 1 START seed file test16699635166145722357_test_basic.base ................ [RUN]
+2022-12-02 06:45:17.711910 (Thread-25): 06:45:17  1 of 1 START seed file test16699635166145722357_test_basic.base ................ [RUN]
+2022-12-02 06:45:17.712558 (Thread-25): 06:45:17.712396 [debug] [Thread-25 ]: Acquiring new doris connection "seed.ephemeral.base"
+2022-12-02 06:45:17.712863 (Thread-25): 06:45:17.712724 [debug] [Thread-25 ]: Began compiling node seed.ephemeral.base
+2022-12-02 06:45:17.713146 (Thread-25): 06:45:17.713015 [debug] [Thread-25 ]: finished collecting timing info
+2022-12-02 06:45:17.713455 (Thread-25): 06:45:17.713319 [debug] [Thread-25 ]: Began executing node seed.ephemeral.base
+2022-12-02 06:45:17.715893 (Thread-25): 06:45:17.715703 [debug] [Thread-25 ]: On "seed.ephemeral.base": cache miss for schema "{self.database}.{self.schema}", this is inefficient
+2022-12-02 06:45:17.718096 (Thread-25): 06:45:17.717921 [debug] [Thread-25 ]: Using doris connection "seed.ephemeral.base"
+2022-12-02 06:45:17.718384 (Thread-25): 06:45:17.718243 [debug] [Thread-25 ]: On seed.ephemeral.base: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "seed.ephemeral.base"} */
+
+    select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type end as table_type
+    from information_schema.tables
+    where table_schema = 'test16699635166145722357_test_basic'
+  
+2022-12-02 06:45:17.718769 (Thread-25): 06:45:17.718612 [debug] [Thread-25 ]: Opening a new connection, currently in state closed
+2022-12-02 06:45:17.726949 (Thread-25): 06:45:17.726760 [debug] [Thread-25 ]: SQL status: 0 rows affected in 0.01 seconds
+2022-12-02 06:45:17.728253 (Thread-25): 06:45:17.728081 [debug] [Thread-25 ]: with database=None, schema=test16699635166145722357_test_basic, relations=[]
+2022-12-02 06:45:17.731587 (Thread-25): 06:45:17.731411 [debug] [Thread-25 ]: Using doris connection "seed.ephemeral.base"
+2022-12-02 06:45:17.731871 (Thread-25): 06:45:17.731734 [debug] [Thread-25 ]: On seed.ephemeral.base: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "seed.ephemeral.base"} */
+
+    
+    create table `test16699635166145722357_test_basic`.`base`
+    (
+        
+        
+        
+        
+        `id` integer,
+        
+        
+        
+        
+        `name` string,
+        
+        
+        
+        
+        `some_date` datetime
+        
+    )
+    
+    
+    ENGINE = OLAP
+    
+  
+    
+  
+  
+    
+  
+  
+  
+    
+  
+  
+    DISTRIBUTED BY HASH (
+      
+        id
+      
+    ) BUCKETS 1
+  
+    
+  
+    PROPERTIES (
+        
+          "replication_num" = "1"
+        
+    )
+  
+    
+    
+2022-12-02 06:45:17.735732 (Thread-25): 06:45:17.735571 [debug] [Thread-25 ]: SQL status: 0 rows affected in 0.0 seconds
+2022-12-02 06:45:17.746249 (Thread-25): 06:45:17.746050 [debug] [Thread-25 ]: Using doris connection "seed.ephemeral.base"
+2022-12-02 06:45:17.746533 (Thread-25): 06:45:17.746396 [debug] [Thread-25 ]: On seed.ephemeral.base: 
+          insert into `test16699635166145722357_test_basic`.`base` (`id`, `name`, `some_date`) values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      ...
+2022-12-02 06:45:17.771024 (Thread-25): 06:45:17.770743 [debug] [Thread-25 ]: SQL status: 10 rows affected in 0.02 seconds
+2022-12-02 06:45:17.772038 (Thread-25): 06:45:17.771862 [debug] [Thread-25 ]: Writing runtime SQL for node "seed.ephemeral.base"
+2022-12-02 06:45:17.774985 (Thread-25): 06:45:17.774798 [debug] [Thread-25 ]: finished collecting timing info
+2022-12-02 06:45:17.775321 (Thread-25): 06:45:17.775181 [debug] [Thread-25 ]: On seed.ephemeral.base: Close
+2022-12-02 06:45:17.776145 (Thread-25): 06:45:17.775955 [info ] [Thread-25 ]: 1 of 1 OK loaded seed file test16699635166145722357_test_basic.base ............ [INSERT 10 in 0.06s]
+2022-12-02 06:45:17.776416 (Thread-25): 06:45:17  1 of 1 OK loaded seed file test16699635166145722357_test_basic.base ............ [INSERT 10 in 0.06s]
+2022-12-02 06:45:17.776842 (Thread-25): 06:45:17.776696 [debug] [Thread-25 ]: Finished running node seed.ephemeral.base
+2022-12-02 06:45:17.778585 (MainThread): 06:45:17.778292 [debug] [MainThread]: Acquiring new doris connection "master"
+2022-12-02 06:45:17.779317 (MainThread): 06:45:17.779147 [info ] [MainThread]: 
+2022-12-02 06:45:17.779581 (MainThread): 06:45:17  
+2022-12-02 06:45:17.779860 (MainThread): 06:45:17.779718 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 0.09 seconds (0.09s).
+2022-12-02 06:45:17.780094 (MainThread): 06:45:17  Finished running 1 seed in 0 hours 0 minutes and 0.09 seconds (0.09s).
+2022-12-02 06:45:17.780343 (MainThread): 06:45:17.780214 [debug] [MainThread]: Connection 'master' was properly closed.
+2022-12-02 06:45:17.780589 (MainThread): 06:45:17.780462 [debug] [MainThread]: Connection 'seed.ephemeral.base' was properly closed.
+2022-12-02 06:45:17.788306 (MainThread): 06:45:17.788128 [info ] [MainThread]: 
+2022-12-02 06:45:17.788578 (MainThread): 06:45:17  
+2022-12-02 06:45:17.788885 (MainThread): 06:45:17.788718 [info ] [MainThread]: Completed successfully
+2022-12-02 06:45:17.789143 (MainThread): 06:45:17  Completed successfully
+2022-12-02 06:45:17.789403 (MainThread): 06:45:17.789275 [info ] [MainThread]: 
+2022-12-02 06:45:17.789636 (MainThread): 06:45:17  
+2022-12-02 06:45:17.789902 (MainThread): 06:45:17.789768 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2022-12-02 06:45:17.790134 (MainThread): 06:45:17  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2022-12-02 06:45:17.790474 (MainThread): 06:45:17.790335 [debug] [MainThread]: Flushing usage events
+2022-12-02 06:45:17.809025 (MainThread): 
+
+============================== 2022-12-02 06:45:17.808822 | 70e83a63-c44e-47fa-a6f3-9f3316831a10 ==============================
+06:45:17.808830 [info ] [MainThread]: Running with dbt=1.3.1
+2022-12-02 06:45:17.809321 (MainThread): 06:45:17  Running with dbt=1.3.1
+2022-12-02 06:45:17.809605 (MainThread): 06:45:17.809459 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/tmp/pytest-of-hdc/pytest-84/profile4', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+2022-12-02 06:45:17.809862 (MainThread): 06:45:17.809731 [debug] [MainThread]: Tracking: do not track
+2022-12-02 06:45:17.843849 (MainThread): 06:45:17.843595 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-12-02 06:45:17.844177 (MainThread): 06:45:17.844029 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+2022-12-02 06:45:17.856449 (MainThread): 06:45:17.856236 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+2022-12-02 06:45:17.856738 (MainThread): 06:45:17  Found 3 models, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+2022-12-02 06:45:17.857684 (MainThread): 06:45:17.857512 [info ] [MainThread]: 
+2022-12-02 06:45:17.857945 (MainThread): 06:45:17  
+2022-12-02 06:45:17.858532 (MainThread): 06:45:17.858370 [debug] [MainThread]: Acquiring new doris connection "master"
+2022-12-02 06:45:17.859977 (ThreadPoolExecutor-15_0): 06:45:17.859594 [debug] [ThreadPool]: Acquiring new doris connection "list_"
+2022-12-02 06:45:17.862603 (ThreadPoolExecutor-15_0): 06:45:17.862401 [debug] [ThreadPool]: Using doris connection "list_"
+2022-12-02 06:45:17.862907 (ThreadPoolExecutor-15_0): 06:45:17.862768 [debug] [ThreadPool]: On list_: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "connection_name": "list_"} */
+select distinct schema_name from information_schema.schemata
+2022-12-02 06:45:17.863172 (ThreadPoolExecutor-15_0): 06:45:17.863031 [debug] [ThreadPool]: Opening a new connection, currently in state init
+2022-12-02 06:45:17.866530 (ThreadPoolExecutor-15_0): 06:45:17.866343 [debug] [ThreadPool]: SQL status: 9 rows affected in 0.0 seconds
+2022-12-02 06:45:17.867987 (ThreadPoolExecutor-15_0): 06:45:17.867810 [debug] [ThreadPool]: On list_: Close
+2022-12-02 06:45:17.869731 (ThreadPoolExecutor-16_0): 06:45:17.869474 [debug] [ThreadPool]: Acquiring new doris connection "list__test16699635166145722357_test_basic"
+2022-12-02 06:45:17.872102 (ThreadPoolExecutor-16_0): 06:45:17.871920 [debug] [ThreadPool]: Using doris connection "list__test16699635166145722357_test_basic"
+2022-12-02 06:45:17.872381 (ThreadPoolExecutor-16_0): 06:45:17.872245 [debug] [ThreadPool]: On list__test16699635166145722357_test_basic: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "connection_name": "list__test16699635166145722357_test_basic"} */
+
+    select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type end as table_type
+    from information_schema.tables
+    where table_schema = 'test16699635166145722357_test_basic'
+  
+2022-12-02 06:45:17.872648 (ThreadPoolExecutor-16_0): 06:45:17.872509 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+2022-12-02 06:45:17.880120 (ThreadPoolExecutor-16_0): 06:45:17.879941 [debug] [ThreadPool]: SQL status: 1 rows affected in 0.01 seconds
+2022-12-02 06:45:17.881523 (ThreadPoolExecutor-16_0): 06:45:17.881349 [debug] [ThreadPool]: On list__test16699635166145722357_test_basic: Close
+2022-12-02 06:45:17.883025 (MainThread): 06:45:17.882754 [info ] [MainThread]: Concurrency: 1 threads (target='default')
+2022-12-02 06:45:17.883331 (MainThread): 06:45:17  Concurrency: 1 threads (target='default')
+2022-12-02 06:45:17.883593 (MainThread): 06:45:17.883460 [info ] [MainThread]: 
+2022-12-02 06:45:17.883833 (MainThread): 06:45:17  
+2022-12-02 06:45:17.885076 (Thread-29): 06:45:17.884846 [debug] [Thread-29 ]: Began running node model.ephemeral.ephemeral
+2022-12-02 06:45:17.885854 (Thread-29): 06:45:17.885654 [debug] [Thread-29 ]: Acquiring new doris connection "model.ephemeral.ephemeral"
+2022-12-02 06:45:17.886166 (Thread-29): 06:45:17.886027 [debug] [Thread-29 ]: Began compiling node model.ephemeral.ephemeral
+2022-12-02 06:45:17.886440 (Thread-29): 06:45:17.886309 [debug] [Thread-29 ]: Compiling model.ephemeral.ephemeral
+2022-12-02 06:45:17.890360 (Thread-29): 06:45:17.890168 [debug] [Thread-29 ]: Writing injected SQL for node "model.ephemeral.ephemeral"
+2022-12-02 06:45:17.890894 (Thread-29): 06:45:17.890734 [debug] [Thread-29 ]: finished collecting timing info
+2022-12-02 06:45:17.891642 (Thread-29): 06:45:17.891478 [debug] [Thread-29 ]: Finished running node model.ephemeral.ephemeral
+2022-12-02 06:45:17.892516 (Thread-29): 06:45:17.892258 [debug] [Thread-29 ]: Began running node model.ephemeral.table_model
+2022-12-02 06:45:17.892925 (Thread-29): 06:45:17.892765 [info ] [Thread-29 ]: 1 of 2 START sql table model test16699635166145722357_test_basic.table_model ... [RUN]
+2022-12-02 06:45:17.893182 (Thread-29): 06:45:17  1 of 2 START sql table model test16699635166145722357_test_basic.table_model ... [RUN]
+2022-12-02 06:45:17.893734 (Thread-29): 06:45:17.893572 [debug] [Thread-29 ]: Acquiring new doris connection "model.ephemeral.table_model"
+2022-12-02 06:45:17.894009 (Thread-29): 06:45:17.893875 [debug] [Thread-29 ]: Began compiling node model.ephemeral.table_model
+2022-12-02 06:45:17.894270 (Thread-29): 06:45:17.894141 [debug] [Thread-29 ]: Compiling model.ephemeral.table_model
+2022-12-02 06:45:17.899109 (Thread-29): 06:45:17.898930 [debug] [Thread-29 ]: Writing injected SQL for node "model.ephemeral.table_model"
+2022-12-02 06:45:17.899508 (Thread-29): 06:45:17.899358 [debug] [Thread-29 ]: finished collecting timing info
+2022-12-02 06:45:17.899817 (Thread-29): 06:45:17.899674 [debug] [Thread-29 ]: Began executing node model.ephemeral.table_model
+2022-12-02 06:45:17.904607 (Thread-29): 06:45:17.904431 [debug] [Thread-29 ]: Writing runtime sql for node "model.ephemeral.table_model"
+2022-12-02 06:45:17.905090 (Thread-29): 06:45:17.904931 [debug] [Thread-29 ]: Using doris connection "model.ephemeral.table_model"
+2022-12-02 06:45:17.905362 (Thread-29): 06:45:17.905221 [debug] [Thread-29 ]: On model.ephemeral.table_model: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.ephemeral.table_model"} */
+
+  
+    
+    
+    
+    
+    create table `test16699635166145722357_test_basic`.`table_model__dbt_tmp`
+    
+  
+    
+  
+  
+    
+  
+  
+  
+    
+  
+  
+    
+  
+    PROPERTIES (
+        
+          "replication_num" = "1"
+        
+    )
+   as 
+
+  with __dbt__cte__ephemeral as (
+
+
+  select * from `test16699635166145722357_test_basic`.`base`
+)select * from __dbt__cte__ephemeral;
+  
+2022-12-02 06:45:17.905630 (Thread-29): 06:45:17.905489 [debug] [Thread-29 ]: Opening a new connection, currently in state closed
+2022-12-02 06:45:17.944260 (Thread-29): 06:45:17.943958 [debug] [Thread-29 ]: SQL status: 10 rows affected in 0.04 seconds
+2022-12-02 06:45:17.948905 (Thread-29): 06:45:17.948698 [debug] [Thread-29 ]: Using doris connection "model.ephemeral.table_model"
+2022-12-02 06:45:17.949191 (Thread-29): 06:45:17.949055 [debug] [Thread-29 ]: On model.ephemeral.table_model: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.ephemeral.table_model"} */
+
+    drop table if exists `test16699635166145722357_test_basic`.`table_model`
+  
+2022-12-02 06:45:17.949743 (Thread-29): 06:45:17.949586 [debug] [Thread-29 ]: SQL status: 0 rows affected in 0.0 seconds
+2022-12-02 06:45:17.950778 (Thread-29): 06:45:17.950602 [debug] [Thread-29 ]: Using doris connection "model.ephemeral.table_model"
+2022-12-02 06:45:17.951045 (Thread-29): 06:45:17.950912 [debug] [Thread-29 ]: On model.ephemeral.table_model: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.ephemeral.table_model"} */
+
+    
+    alter table `test16699635166145722357_test_basic`.`table_model__dbt_tmp` rename table_model
+    
+  
+2022-12-02 06:45:17.952772 (Thread-29): 06:45:17.952616 [debug] [Thread-29 ]: SQL status: 0 rows affected in 0.0 seconds
+2022-12-02 06:45:17.956596 (Thread-29): 06:45:17.956424 [debug] [Thread-29 ]: Using doris connection "model.ephemeral.table_model"
+2022-12-02 06:45:17.956872 (Thread-29): 06:45:17.956738 [debug] [Thread-29 ]: On model.ephemeral.table_model: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.ephemeral.table_model"} */
+
+    drop table if exists `test16699635166145722357_test_basic`.`table_model__dbt_backup`
+    
+2022-12-02 06:45:17.957316 (Thread-29): 06:45:17.957172 [debug] [Thread-29 ]: SQL status: 0 rows affected in 0.0 seconds
+2022-12-02 06:45:17.958493 (Thread-29): 06:45:17.958322 [debug] [Thread-29 ]: finished collecting timing info
+2022-12-02 06:45:17.958827 (Thread-29): 06:45:17.958681 [debug] [Thread-29 ]: On model.ephemeral.table_model: Close
+2022-12-02 06:45:17.959629 (Thread-29): 06:45:17.959444 [info ] [Thread-29 ]: 1 of 2 OK created sql table model test16699635166145722357_test_basic.table_model  [10 rows affected in 0.07s]
+2022-12-02 06:45:17.959919 (Thread-29): 06:45:17  1 of 2 OK created sql table model test16699635166145722357_test_basic.table_model  [10 rows affected in 0.07s]
+2022-12-02 06:45:17.960332 (Thread-29): 06:45:17.960187 [debug] [Thread-29 ]: Finished running node model.ephemeral.table_model
+2022-12-02 06:45:17.960784 (Thread-29): 06:45:17.960525 [debug] [Thread-29 ]: Began running node model.ephemeral.view_model
+2022-12-02 06:45:17.961163 (Thread-29): 06:45:17.961010 [info ] [Thread-29 ]: 2 of 2 START sql view model test16699635166145722357_test_basic.view_model ..... [RUN]
+2022-12-02 06:45:17.961411 (Thread-29): 06:45:17  2 of 2 START sql view model test16699635166145722357_test_basic.view_model ..... [RUN]
+2022-12-02 06:45:17.961978 (Thread-29): 06:45:17.961820 [debug] [Thread-29 ]: Acquiring new doris connection "model.ephemeral.view_model"
+2022-12-02 06:45:17.962261 (Thread-29): 06:45:17.962126 [debug] [Thread-29 ]: Began compiling node model.ephemeral.view_model
+2022-12-02 06:45:17.962528 (Thread-29): 06:45:17.962400 [debug] [Thread-29 ]: Compiling model.ephemeral.view_model
+2022-12-02 06:45:17.967343 (Thread-29): 06:45:17.967163 [debug] [Thread-29 ]: Writing injected SQL for node "model.ephemeral.view_model"
+2022-12-02 06:45:17.967772 (Thread-29): 06:45:17.967614 [debug] [Thread-29 ]: finished collecting timing info
+2022-12-02 06:45:17.968077 (Thread-29): 06:45:17.967940 [debug] [Thread-29 ]: Began executing node model.ephemeral.view_model
+2022-12-02 06:45:17.972273 (Thread-29): 06:45:17.972101 [debug] [Thread-29 ]: Writing runtime sql for node "model.ephemeral.view_model"
+2022-12-02 06:45:17.972702 (Thread-29): 06:45:17.972541 [debug] [Thread-29 ]: Using doris connection "model.ephemeral.view_model"
+2022-12-02 06:45:17.972969 (Thread-29): 06:45:17.972833 [debug] [Thread-29 ]: On model.ephemeral.view_model: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.ephemeral.view_model"} */
+
+  create view `test16699635166145722357_test_basic`.`view_model__dbt_tmp` as 
+
+  with __dbt__cte__ephemeral as (
+
+
+  select * from `test16699635166145722357_test_basic`.`base`
+)select * from __dbt__cte__ephemeral;
+2022-12-02 06:45:17.973228 (Thread-29): 06:45:17.973089 [debug] [Thread-29 ]: Opening a new connection, currently in state closed
+2022-12-02 06:45:17.976442 (Thread-29): 06:45:17.976275 [debug] [Thread-29 ]: SQL status: 0 rows affected in 0.0 seconds
+2022-12-02 06:45:17.979112 (Thread-29): 06:45:17.978939 [debug] [Thread-29 ]: Using doris connection "model.ephemeral.view_model"
+2022-12-02 06:45:17.979387 (Thread-29): 06:45:17.979247 [debug] [Thread-29 ]: On model.ephemeral.view_model: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.ephemeral.view_model"} */
+
+    drop view if exists `test16699635166145722357_test_basic`.`view_model`
+  
+2022-12-02 06:45:17.979834 (Thread-29): 06:45:17.979679 [debug] [Thread-29 ]: SQL status: 0 rows affected in 0.0 seconds
+2022-12-02 06:45:17.980970 (Thread-29): 06:45:17.980801 [debug] [Thread-29 ]: Using doris connection "model.ephemeral.view_model"
+2022-12-02 06:45:17.981251 (Thread-29): 06:45:17.981116 [debug] [Thread-29 ]: On model.ephemeral.view_model: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.ephemeral.view_model"} */
+
+    show create view `test16699635166145722357_test_basic`.`view_model__dbt_tmp`
+  
+2022-12-02 06:45:17.981688 (Thread-29): 06:45:17.981542 [debug] [Thread-29 ]: SQL status: 1 rows affected in 0.0 seconds
+2022-12-02 06:45:17.982910 (Thread-29): 06:45:17.982741 [debug] [Thread-29 ]: Using doris connection "model.ephemeral.view_model"
+2022-12-02 06:45:17.983180 (Thread-29): 06:45:17.983043 [debug] [Thread-29 ]: On model.ephemeral.view_model: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.ephemeral.view_model"} */
+
+    
+    
+    create view `test16699635166145722357_test_basic`.`view_model` as  WITH __dbt__cte__ephemeral AS (SELECT `default_cluster:test16699635166145722357_test_basic`.`base`.`id` AS `id`, `default_cluster:test16699635166145722357_test_basic`.`base`.`name` AS `name`, `default_cluster:test16699635166145722357_test_basic`.`base`.`some_date` AS `some_date` FROM `default_cluster:test16699635166145722357_test_basic`.`base`) SELECT `__dbt__cte__ephemeral`.`id` AS `id`, `__dbt__cte__ephemeral`.`name` AS `name`, `__dbt__cte__ephemeral`.`some_date` AS `some_date` FROM `__dbt__cte__ephemeral`;
+    drop view if exists `test16699635166145722357_test_basic`.`view_model__dbt_tmp`;
+    
+  
+2022-12-02 06:45:17.985150 (Thread-29): 06:45:17.985002 [debug] [Thread-29 ]: SQL status: 0 rows affected in 0.0 seconds
+2022-12-02 06:45:17.988674 (Thread-29): 06:45:17.988499 [debug] [Thread-29 ]: Using doris connection "model.ephemeral.view_model"
+2022-12-02 06:45:17.988950 (Thread-29): 06:45:17.988816 [debug] [Thread-29 ]: On model.ephemeral.view_model: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.ephemeral.view_model"} */
+
+    drop view if exists `test16699635166145722357_test_basic`.`view_model__dbt_backup`
+    
+2022-12-02 06:45:17.989373 (Thread-29): 06:45:17.989227 [debug] [Thread-29 ]: SQL status: 0 rows affected in 0.0 seconds
+2022-12-02 06:45:17.990508 (Thread-29): 06:45:17.990337 [debug] [Thread-29 ]: finished collecting timing info
+2022-12-02 06:45:17.990832 (Thread-29): 06:45:17.990683 [debug] [Thread-29 ]: On model.ephemeral.view_model: Close
+2022-12-02 06:45:17.991606 (Thread-29): 06:45:17.991421 [info ] [Thread-29 ]: 2 of 2 OK created sql view model test16699635166145722357_test_basic.view_model  [0 rows affected in 0.03s]
+2022-12-02 06:45:17.991893 (Thread-29): 06:45:17  2 of 2 OK created sql view model test16699635166145722357_test_basic.view_model  [0 rows affected in 0.03s]
+2022-12-02 06:45:17.992280 (Thread-29): 06:45:17.992134 [debug] [Thread-29 ]: Finished running node model.ephemeral.view_model
+2022-12-02 06:45:17.994043 (MainThread): 06:45:17.993718 [debug] [MainThread]: Acquiring new doris connection "master"
+2022-12-02 06:45:17.994805 (MainThread): 06:45:17.994626 [info ] [MainThread]: 
+2022-12-02 06:45:17.995081 (MainThread): 06:45:17  
+2022-12-02 06:45:17.995346 (MainThread): 06:45:17.995207 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.14 seconds (0.14s).
+2022-12-02 06:45:17.995578 (MainThread): 06:45:17  Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.14 seconds (0.14s).
+2022-12-02 06:45:17.995838 (MainThread): 06:45:17.995706 [debug] [MainThread]: Connection 'master' was properly closed.
+2022-12-02 06:45:17.996081 (MainThread): 06:45:17.995954 [debug] [MainThread]: Connection 'model.ephemeral.view_model' was properly closed.
+2022-12-02 06:45:18.003007 (MainThread): 06:45:18.002824 [info ] [MainThread]: 
+2022-12-02 06:45:18.003279 (MainThread): 06:45:18  
+2022-12-02 06:45:18.003573 (MainThread): 06:45:18.003409 [info ] [MainThread]: Completed successfully
+2022-12-02 06:45:18.003838 (MainThread): 06:45:18  Completed successfully
+2022-12-02 06:45:18.004105 (MainThread): 06:45:18.003974 [info ] [MainThread]: 
+2022-12-02 06:45:18.004337 (MainThread): 06:45:18  
+2022-12-02 06:45:18.004591 (MainThread): 06:45:18.004461 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2022-12-02 06:45:18.004839 (MainThread): 06:45:18  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2022-12-02 06:45:18.005185 (MainThread): 06:45:18.005045 [debug] [MainThread]: Flushing usage events

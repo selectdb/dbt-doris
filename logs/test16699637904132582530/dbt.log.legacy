@@ -1,0 +1,527 @@
+2022-12-02 06:49:50.663708 (MainThread): 06:49:50.663512 [debug] [MainThread]: Connection '_test' was properly closed.
+2022-12-02 06:49:50.673140 (MainThread): 
+
+============================== 2022-12-02 06:49:50.672957 | 2deefd8f-7bbc-46a9-86e1-a3e3ec02eba8 ==============================
+06:49:50.672965 [info ] [MainThread]: Running with dbt=1.3.1
+2022-12-02 06:49:50.673393 (MainThread): 06:49:50  Running with dbt=1.3.1
+2022-12-02 06:49:50.673676 (MainThread): 06:49:50.673531 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/tmp/pytest-of-hdc/pytest-86/profile5', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+2022-12-02 06:49:50.673939 (MainThread): 06:49:50.673809 [debug] [MainThread]: Tracking: do not track
+2022-12-02 06:49:50.685080 (MainThread): 06:49:50.684913 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+2022-12-02 06:49:50.685339 (MainThread): 06:49:50  Partial parse save file not found. Starting full parse.
+2022-12-02 06:49:50.700258 (MainThread): 06:49:50.700078 [debug] [MainThread]: Parsing macros/materializations/incremental/help.sql
+2022-12-02 06:49:50.706655 (MainThread): 06:49:50.706476 [debug] [MainThread]: Parsing macros/materializations/incremental/incremental.sql
+2022-12-02 06:49:50.715129 (MainThread): 06:49:50.714950 [debug] [MainThread]: Parsing macros/materializations/view/create_view_as.sql
+2022-12-02 06:49:50.716250 (MainThread): 06:49:50.716083 [debug] [MainThread]: Parsing macros/materializations/seed/helpers.sql
+2022-12-02 06:49:50.720051 (MainThread): 06:49:50.719879 [debug] [MainThread]: Parsing macros/materializations/table/create_table_as.sql
+2022-12-02 06:49:50.723556 (MainThread): 06:49:50.723384 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot.sql
+2022-12-02 06:49:50.741781 (MainThread): 06:49:50.741594 [debug] [MainThread]: Parsing macros/materializations/snapshot/strategies.sql
+2022-12-02 06:49:50.742814 (MainThread): 06:49:50.742642 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-12-02 06:49:50.745117 (MainThread): 06:49:50.744949 [debug] [MainThread]: Parsing macros/materializations/partition/replace.sql
+2022-12-02 06:49:50.746516 (MainThread): 06:49:50.746351 [debug] [MainThread]: Parsing macros/materializations/partition/helpers.sql
+2022-12-02 06:49:50.754273 (MainThread): 06:49:50.754101 [debug] [MainThread]: Parsing macros/materializations/partition/partition.sql
+2022-12-02 06:49:50.765374 (MainThread): 06:49:50.765202 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+2022-12-02 06:49:50.765956 (MainThread): 06:49:50.765799 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+2022-12-02 06:49:50.767580 (MainThread): 06:49:50.767417 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+2022-12-02 06:49:50.789479 (MainThread): 06:49:50.789308 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+2022-12-02 06:49:50.791297 (MainThread): 06:49:50.791129 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+2022-12-02 06:49:50.795776 (MainThread): 06:49:50.795600 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+2022-12-02 06:49:50.796873 (MainThread): 06:49:50.796701 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+2022-12-02 06:49:50.797797 (MainThread): 06:49:50.797603 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+2022-12-02 06:49:50.798981 (MainThread): 06:49:50.798813 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+2022-12-02 06:49:50.800592 (MainThread): 06:49:50.800427 [debug] [MainThread]: Parsing macros/python_model/python.sql
+2022-12-02 06:49:50.807123 (MainThread): 06:49:50.806953 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+2022-12-02 06:49:50.811384 (MainThread): 06:49:50.811214 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+2022-12-02 06:49:50.814034 (MainThread): 06:49:50.813862 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+2022-12-02 06:49:50.822386 (MainThread): 06:49:50.822213 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+2022-12-02 06:49:50.841456 (MainThread): 06:49:50.841279 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+2022-12-02 06:49:50.843541 (MainThread): 06:49:50.843372 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+2022-12-02 06:49:50.848446 (MainThread): 06:49:50.848267 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+2022-12-02 06:49:50.850500 (MainThread): 06:49:50.850333 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+2022-12-02 06:49:50.862939 (MainThread): 06:49:50.862765 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+2022-12-02 06:49:50.880155 (MainThread): 06:49:50.879954 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-12-02 06:49:50.882090 (MainThread): 06:49:50.881919 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+2022-12-02 06:49:50.895594 (MainThread): 06:49:50.895422 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+2022-12-02 06:49:50.903268 (MainThread): 06:49:50.903097 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+2022-12-02 06:49:50.914391 (MainThread): 06:49:50.914218 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-12-02 06:49:50.931804 (MainThread): 06:49:50.931624 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+2022-12-02 06:49:50.947814 (MainThread): 06:49:50.947634 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-12-02 06:49:50.956497 (MainThread): 06:49:50.956324 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-12-02 06:49:50.958276 (MainThread): 06:49:50.958111 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-12-02 06:49:50.962069 (MainThread): 06:49:50.961896 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+2022-12-02 06:49:50.964702 (MainThread): 06:49:50.964526 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+2022-12-02 06:49:50.966273 (MainThread): 06:49:50.966106 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+2022-12-02 06:49:50.972066 (MainThread): 06:49:50.971895 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+2022-12-02 06:49:50.975991 (MainThread): 06:49:50.975813 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+2022-12-02 06:49:50.981872 (MainThread): 06:49:50.981700 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+2022-12-02 06:49:50.983395 (MainThread): 06:49:50.983230 [debug] [MainThread]: Parsing macros/utils/replace.sql
+2022-12-02 06:49:50.984891 (MainThread): 06:49:50.984725 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+2022-12-02 06:49:50.986242 (MainThread): 06:49:50.986067 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+2022-12-02 06:49:50.987777 (MainThread): 06:49:50.987597 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+2022-12-02 06:49:50.990081 (MainThread): 06:49:50.989912 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+2022-12-02 06:49:50.991459 (MainThread): 06:49:50.991292 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+2022-12-02 06:49:50.994079 (MainThread): 06:49:50.993913 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+2022-12-02 06:49:51.001288 (MainThread): 06:49:51.001101 [debug] [MainThread]: Parsing macros/utils/length.sql
+2022-12-02 06:49:51.002519 (MainThread): 06:49:51.002353 [debug] [MainThread]: Parsing macros/utils/concat.sql
+2022-12-02 06:49:51.003809 (MainThread): 06:49:51.003633 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+2022-12-02 06:49:51.005163 (MainThread): 06:49:51.004997 [debug] [MainThread]: Parsing macros/utils/position.sql
+2022-12-02 06:49:51.006523 (MainThread): 06:49:51.006358 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+2022-12-02 06:49:51.008342 (MainThread): 06:49:51.008173 [debug] [MainThread]: Parsing macros/utils/right.sql
+2022-12-02 06:49:51.009708 (MainThread): 06:49:51.009532 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+2022-12-02 06:49:51.011025 (MainThread): 06:49:51.010860 [debug] [MainThread]: Parsing macros/utils/except.sql
+2022-12-02 06:49:51.012112 (MainThread): 06:49:51.011947 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+2022-12-02 06:49:51.013431 (MainThread): 06:49:51.013262 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+2022-12-02 06:49:51.014781 (MainThread): 06:49:51.014605 [debug] [MainThread]: Parsing macros/utils/hash.sql
+2022-12-02 06:49:51.016129 (MainThread): 06:49:51.015964 [debug] [MainThread]: Parsing macros/utils/literal.sql
+2022-12-02 06:49:51.017326 (MainThread): 06:49:51.017161 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+2022-12-02 06:49:51.018405 (MainThread): 06:49:51.018241 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+2022-12-02 06:49:51.019780 (MainThread): 06:49:51.019599 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+2022-12-02 06:49:51.021092 (MainThread): 06:49:51.020927 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+2022-12-02 06:49:51.023460 (MainThread): 06:49:51.023292 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+2022-12-02 06:49:51.025202 (MainThread): 06:49:51.025035 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+2022-12-02 06:49:51.028020 (MainThread): 06:49:51.027851 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+2022-12-02 06:49:51.029876 (MainThread): 06:49:51.029709 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+2022-12-02 06:49:51.032195 (MainThread): 06:49:51.032026 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+2022-12-02 06:49:51.034680 (MainThread): 06:49:51.034506 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+2022-12-02 06:49:51.050350 (MainThread): 06:49:51.050177 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+2022-12-02 06:49:51.055252 (MainThread): 06:49:51.055073 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+2022-12-02 06:49:51.070260 (MainThread): 06:49:51.070076 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+2022-12-02 06:49:51.073328 (MainThread): 06:49:51.073156 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+2022-12-02 06:49:51.084195 (MainThread): 06:49:51.084021 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+2022-12-02 06:49:51.087978 (MainThread): 06:49:51.087808 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+2022-12-02 06:49:51.095729 (MainThread): 06:49:51.095551 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+2022-12-02 06:49:51.104838 (MainThread): 06:49:51.104660 [debug] [MainThread]: Parsing macros/etc/statement.sql
+2022-12-02 06:49:51.110594 (MainThread): 06:49:51.110423 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+2022-12-02 06:49:51.501525 (MainThread): 06:49:51.501267 [debug] [MainThread]: 1603: static parser failed on incremental.sql
+2022-12-02 06:49:51.510876 (MainThread): 06:49:51.510654 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental.sql
+2022-12-02 06:49:51.566514 (MainThread): 06:49:51.566268 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 2 seed files, 1 source, 0 exposures, 0 metrics
+2022-12-02 06:49:51.566817 (MainThread): 06:49:51  Found 1 model, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 2 seed files, 1 source, 0 exposures, 0 metrics
+2022-12-02 06:49:51.567777 (MainThread): 06:49:51.567600 [info ] [MainThread]: 
+2022-12-02 06:49:51.568035 (MainThread): 06:49:51  
+2022-12-02 06:49:51.568633 (MainThread): 06:49:51.568470 [debug] [MainThread]: Acquiring new doris connection "master"
+2022-12-02 06:49:51.570144 (ThreadPoolExecutor-17_0): 06:49:51.569751 [debug] [ThreadPool]: Acquiring new doris connection "list_"
+2022-12-02 06:49:51.572865 (ThreadPoolExecutor-17_0): 06:49:51.572643 [debug] [ThreadPool]: Using doris connection "list_"
+2022-12-02 06:49:51.573164 (ThreadPoolExecutor-17_0): 06:49:51.573026 [debug] [ThreadPool]: On list_: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "connection_name": "list_"} */
+select distinct schema_name from information_schema.schemata
+2022-12-02 06:49:51.573429 (ThreadPoolExecutor-17_0): 06:49:51.573288 [debug] [ThreadPool]: Opening a new connection, currently in state init
+2022-12-02 06:49:51.576778 (ThreadPoolExecutor-17_0): 06:49:51.576581 [debug] [ThreadPool]: SQL status: 9 rows affected in 0.0 seconds
+2022-12-02 06:49:51.578325 (ThreadPoolExecutor-17_0): 06:49:51.578151 [debug] [ThreadPool]: On list_: Close
+2022-12-02 06:49:51.580181 (ThreadPoolExecutor-18_0): 06:49:51.579928 [debug] [ThreadPool]: Acquiring new doris connection "list__test16699637904132582530_test_basic"
+2022-12-02 06:49:51.582636 (ThreadPoolExecutor-18_0): 06:49:51.582459 [debug] [ThreadPool]: Using doris connection "list__test16699637904132582530_test_basic"
+2022-12-02 06:49:51.582930 (ThreadPoolExecutor-18_0): 06:49:51.582791 [debug] [ThreadPool]: On list__test16699637904132582530_test_basic: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "connection_name": "list__test16699637904132582530_test_basic"} */
+
+    select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type end as table_type
+    from information_schema.tables
+    where table_schema = 'test16699637904132582530_test_basic'
+  
+2022-12-02 06:49:51.583190 (ThreadPoolExecutor-18_0): 06:49:51.583050 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+2022-12-02 06:49:51.590268 (ThreadPoolExecutor-18_0): 06:49:51.590095 [debug] [ThreadPool]: SQL status: 0 rows affected in 0.01 seconds
+2022-12-02 06:49:51.591548 (ThreadPoolExecutor-18_0): 06:49:51.591381 [debug] [ThreadPool]: On list__test16699637904132582530_test_basic: Close
+2022-12-02 06:49:51.592970 (MainThread): 06:49:51.592680 [info ] [MainThread]: Concurrency: 1 threads (target='default')
+2022-12-02 06:49:51.593270 (MainThread): 06:49:51  Concurrency: 1 threads (target='default')
+2022-12-02 06:49:51.593534 (MainThread): 06:49:51.593399 [info ] [MainThread]: 
+2022-12-02 06:49:51.593780 (MainThread): 06:49:51  
+2022-12-02 06:49:51.595129 (Thread-33): 06:49:51.594896 [debug] [Thread-33 ]: Began running node seed.incremental.added
+2022-12-02 06:49:51.595607 (Thread-33): 06:49:51.595438 [info ] [Thread-33 ]: 1 of 2 START seed file test16699637904132582530_test_basic.added ............... [RUN]
+2022-12-02 06:49:51.595883 (Thread-33): 06:49:51  1 of 2 START seed file test16699637904132582530_test_basic.added ............... [RUN]
+2022-12-02 06:49:51.596514 (Thread-33): 06:49:51.596346 [debug] [Thread-33 ]: Acquiring new doris connection "seed.incremental.added"
+2022-12-02 06:49:51.596812 (Thread-33): 06:49:51.596665 [debug] [Thread-33 ]: Began compiling node seed.incremental.added
+2022-12-02 06:49:51.597091 (Thread-33): 06:49:51.596961 [debug] [Thread-33 ]: finished collecting timing info
+2022-12-02 06:49:51.597386 (Thread-33): 06:49:51.597256 [debug] [Thread-33 ]: Began executing node seed.incremental.added
+2022-12-02 06:49:51.599714 (Thread-33): 06:49:51.599535 [debug] [Thread-33 ]: On "seed.incremental.added": cache miss for schema "{self.database}.{self.schema}", this is inefficient
+2022-12-02 06:49:51.601917 (Thread-33): 06:49:51.601744 [debug] [Thread-33 ]: Using doris connection "seed.incremental.added"
+2022-12-02 06:49:51.602200 (Thread-33): 06:49:51.602056 [debug] [Thread-33 ]: On seed.incremental.added: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "seed.incremental.added"} */
+
+    select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type end as table_type
+    from information_schema.tables
+    where table_schema = 'test16699637904132582530_test_basic'
+  
+2022-12-02 06:49:51.602461 (Thread-33): 06:49:51.602323 [debug] [Thread-33 ]: Opening a new connection, currently in state closed
+2022-12-02 06:49:51.609210 (Thread-33): 06:49:51.609027 [debug] [Thread-33 ]: SQL status: 0 rows affected in 0.01 seconds
+2022-12-02 06:49:51.610514 (Thread-33): 06:49:51.610344 [debug] [Thread-33 ]: with database=None, schema=test16699637904132582530_test_basic, relations=[]
+2022-12-02 06:49:51.614229 (Thread-33): 06:49:51.614054 [debug] [Thread-33 ]: Using doris connection "seed.incremental.added"
+2022-12-02 06:49:51.614499 (Thread-33): 06:49:51.614366 [debug] [Thread-33 ]: On seed.incremental.added: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "seed.incremental.added"} */
+
+    
+    create table `test16699637904132582530_test_basic`.`added`
+    (
+        
+        
+        
+        
+        `id` integer,
+        
+        
+        
+        
+        `name` string,
+        
+        
+        
+        
+        `some_date` datetime
+        
+    )
+    
+    
+    ENGINE = OLAP
+    
+  
+    
+  
+  
+    
+  
+  
+  
+    
+  
+  
+    DISTRIBUTED BY HASH (
+      
+        id
+      
+    ) BUCKETS 1
+  
+    
+  
+    PROPERTIES (
+        
+          "replication_num" = "1"
+        
+    )
+  
+    
+    
+2022-12-02 06:49:51.618118 (Thread-33): 06:49:51.617969 [debug] [Thread-33 ]: SQL status: 0 rows affected in 0.0 seconds
+2022-12-02 06:49:51.637912 (Thread-33): 06:49:51.637729 [debug] [Thread-33 ]: Using doris connection "seed.incremental.added"
+2022-12-02 06:49:51.638188 (Thread-33): 06:49:51.638053 [debug] [Thread-33 ]: On seed.incremental.added: 
+          insert into `test16699637904132582530_test_basic`.`added` (`id`, `name`, `some_date`) values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      ...
+2022-12-02 06:49:51.660671 (Thread-33): 06:49:51.660455 [debug] [Thread-33 ]: SQL status: 20 rows affected in 0.02 seconds
+2022-12-02 06:49:51.661537 (Thread-33): 06:49:51.661375 [debug] [Thread-33 ]: Writing runtime SQL for node "seed.incremental.added"
+2022-12-02 06:49:51.664360 (Thread-33): 06:49:51.664187 [debug] [Thread-33 ]: finished collecting timing info
+2022-12-02 06:49:51.664686 (Thread-33): 06:49:51.664550 [debug] [Thread-33 ]: On seed.incremental.added: Close
+2022-12-02 06:49:51.665484 (Thread-33): 06:49:51.665297 [info ] [Thread-33 ]: 1 of 2 OK loaded seed file test16699637904132582530_test_basic.added ........... [INSERT 20 in 0.07s]
+2022-12-02 06:49:51.665759 (Thread-33): 06:49:51  1 of 2 OK loaded seed file test16699637904132582530_test_basic.added ........... [INSERT 20 in 0.07s]
+2022-12-02 06:49:51.666179 (Thread-33): 06:49:51.666037 [debug] [Thread-33 ]: Finished running node seed.incremental.added
+2022-12-02 06:49:51.666623 (Thread-33): 06:49:51.666369 [debug] [Thread-33 ]: Began running node seed.incremental.base
+2022-12-02 06:49:51.667017 (Thread-33): 06:49:51.666867 [info ] [Thread-33 ]: 2 of 2 START seed file test16699637904132582530_test_basic.base ................ [RUN]
+2022-12-02 06:49:51.667255 (Thread-33): 06:49:51  2 of 2 START seed file test16699637904132582530_test_basic.base ................ [RUN]
+2022-12-02 06:49:51.667830 (Thread-33): 06:49:51.667666 [debug] [Thread-33 ]: Acquiring new doris connection "seed.incremental.base"
+2022-12-02 06:49:51.668106 (Thread-33): 06:49:51.667975 [debug] [Thread-33 ]: Began compiling node seed.incremental.base
+2022-12-02 06:49:51.668375 (Thread-33): 06:49:51.668247 [debug] [Thread-33 ]: finished collecting timing info
+2022-12-02 06:49:51.668651 (Thread-33): 06:49:51.668523 [debug] [Thread-33 ]: Began executing node seed.incremental.base
+2022-12-02 06:49:51.671100 (Thread-33): 06:49:51.670931 [debug] [Thread-33 ]: On "seed.incremental.base": cache miss for schema "{self.database}.{self.schema}", this is inefficient
+2022-12-02 06:49:51.673300 (Thread-33): 06:49:51.673134 [debug] [Thread-33 ]: Using doris connection "seed.incremental.base"
+2022-12-02 06:49:51.673563 (Thread-33): 06:49:51.673432 [debug] [Thread-33 ]: On seed.incremental.base: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "seed.incremental.base"} */
+
+    select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type end as table_type
+    from information_schema.tables
+    where table_schema = 'test16699637904132582530_test_basic'
+  
+2022-12-02 06:49:51.673826 (Thread-33): 06:49:51.673682 [debug] [Thread-33 ]: Opening a new connection, currently in state closed
+2022-12-02 06:49:51.681408 (Thread-33): 06:49:51.681233 [debug] [Thread-33 ]: SQL status: 1 rows affected in 0.01 seconds
+2022-12-02 06:49:51.682758 (Thread-33): 06:49:51.682567 [debug] [Thread-33 ]: with database=None, schema=test16699637904132582530_test_basic, relations=[_ReferenceKey(database=None, schema='test16699637904132582530_test_basic', identifier='added')]
+2022-12-02 06:49:51.685970 (Thread-33): 06:49:51.685792 [debug] [Thread-33 ]: Using doris connection "seed.incremental.base"
+2022-12-02 06:49:51.686238 (Thread-33): 06:49:51.686105 [debug] [Thread-33 ]: On seed.incremental.base: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "seed.incremental.base"} */
+
+    
+    create table `test16699637904132582530_test_basic`.`base`
+    (
+        
+        
+        
+        
+        `id` integer,
+        
+        
+        
+        
+        `name` string,
+        
+        
+        
+        
+        `some_date` datetime
+        
+    )
+    
+    
+    ENGINE = OLAP
+    
+  
+    
+  
+  
+    
+  
+  
+  
+    
+  
+  
+    DISTRIBUTED BY HASH (
+      
+        id
+      
+    ) BUCKETS 1
+  
+    
+  
+    PROPERTIES (
+        
+          "replication_num" = "1"
+        
+    )
+  
+    
+    
+2022-12-02 06:49:51.690550 (Thread-33): 06:49:51.690404 [debug] [Thread-33 ]: SQL status: 0 rows affected in 0.0 seconds
+2022-12-02 06:49:51.700791 (Thread-33): 06:49:51.700616 [debug] [Thread-33 ]: Using doris connection "seed.incremental.base"
+2022-12-02 06:49:51.701063 (Thread-33): 06:49:51.700927 [debug] [Thread-33 ]: On seed.incremental.base: 
+          insert into `test16699637904132582530_test_basic`.`base` (`id`, `name`, `some_date`) values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      ...
+2022-12-02 06:49:51.723081 (Thread-33): 06:49:51.722853 [debug] [Thread-33 ]: SQL status: 10 rows affected in 0.02 seconds
+2022-12-02 06:49:51.724030 (Thread-33): 06:49:51.723863 [debug] [Thread-33 ]: Writing runtime SQL for node "seed.incremental.base"
+2022-12-02 06:49:51.726834 (Thread-33): 06:49:51.726645 [debug] [Thread-33 ]: finished collecting timing info
+2022-12-02 06:49:51.727169 (Thread-33): 06:49:51.727031 [debug] [Thread-33 ]: On seed.incremental.base: Close
+2022-12-02 06:49:51.727995 (Thread-33): 06:49:51.727805 [info ] [Thread-33 ]: 2 of 2 OK loaded seed file test16699637904132582530_test_basic.base ............ [INSERT 10 in 0.06s]
+2022-12-02 06:49:51.728267 (Thread-33): 06:49:51  2 of 2 OK loaded seed file test16699637904132582530_test_basic.base ............ [INSERT 10 in 0.06s]
+2022-12-02 06:49:51.728684 (Thread-33): 06:49:51.728541 [debug] [Thread-33 ]: Finished running node seed.incremental.base
+2022-12-02 06:49:51.730518 (MainThread): 06:49:51.730206 [debug] [MainThread]: Acquiring new doris connection "master"
+2022-12-02 06:49:51.731271 (MainThread): 06:49:51.731103 [info ] [MainThread]: 
+2022-12-02 06:49:51.731529 (MainThread): 06:49:51  
+2022-12-02 06:49:51.731795 (MainThread): 06:49:51.731654 [info ] [MainThread]: Finished running 2 seeds in 0 hours 0 minutes and 0.16 seconds (0.16s).
+2022-12-02 06:49:51.732024 (MainThread): 06:49:51  Finished running 2 seeds in 0 hours 0 minutes and 0.16 seconds (0.16s).
+2022-12-02 06:49:51.732269 (MainThread): 06:49:51.732142 [debug] [MainThread]: Connection 'master' was properly closed.
+2022-12-02 06:49:51.732502 (MainThread): 06:49:51.732380 [debug] [MainThread]: Connection 'seed.incremental.base' was properly closed.
+2022-12-02 06:49:51.739609 (MainThread): 06:49:51.739435 [info ] [MainThread]: 
+2022-12-02 06:49:51.739885 (MainThread): 06:49:51  
+2022-12-02 06:49:51.740171 (MainThread): 06:49:51.740014 [info ] [MainThread]: Completed successfully
+2022-12-02 06:49:51.740434 (MainThread): 06:49:51  Completed successfully
+2022-12-02 06:49:51.740702 (MainThread): 06:49:51.740567 [info ] [MainThread]: 
+2022-12-02 06:49:51.740935 (MainThread): 06:49:51  
+2022-12-02 06:49:51.741183 (MainThread): 06:49:51.741054 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2022-12-02 06:49:51.741413 (MainThread): 06:49:51  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2022-12-02 06:49:51.741752 (MainThread): 06:49:51.741609 [debug] [MainThread]: Flushing usage events
+2022-12-02 06:49:51.761472 (MainThread): 06:49:51.761288 [debug] [MainThread]: Connection '_test' was properly closed.
+2022-12-02 06:49:51.771536 (MainThread): 
+
+============================== 2022-12-02 06:49:51.771351 | 2deefd8f-7bbc-46a9-86e1-a3e3ec02eba8 ==============================
+06:49:51.771361 [info ] [MainThread]: Running with dbt=1.3.1
+2022-12-02 06:49:51.771800 (MainThread): 06:49:51  Running with dbt=1.3.1
+2022-12-02 06:49:51.772082 (MainThread): 06:49:51.771937 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/tmp/pytest-of-hdc/pytest-86/profile5', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'vars': 'seed_name: base', 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+2022-12-02 06:49:51.772330 (MainThread): 06:49:51.772204 [debug] [MainThread]: Tracking: do not track
+2022-12-02 06:49:51.792899 (MainThread): 06:49:51.792648 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+2022-12-02 06:49:51.793188 (MainThread): 06:49:51  Unable to do partial parsing because config vars, config profile, or config target have changed
+2022-12-02 06:49:51.808331 (MainThread): 06:49:51.808120 [debug] [MainThread]: Parsing macros/materializations/incremental/help.sql
+2022-12-02 06:49:51.814959 (MainThread): 06:49:51.814771 [debug] [MainThread]: Parsing macros/materializations/incremental/incremental.sql
+2022-12-02 06:49:51.823607 (MainThread): 06:49:51.823431 [debug] [MainThread]: Parsing macros/materializations/view/create_view_as.sql
+2022-12-02 06:49:51.824749 (MainThread): 06:49:51.824576 [debug] [MainThread]: Parsing macros/materializations/seed/helpers.sql
+2022-12-02 06:49:51.828570 (MainThread): 06:49:51.828399 [debug] [MainThread]: Parsing macros/materializations/table/create_table_as.sql
+2022-12-02 06:49:51.832119 (MainThread): 06:49:51.831949 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot.sql
+2022-12-02 06:49:51.850367 (MainThread): 06:49:51.850190 [debug] [MainThread]: Parsing macros/materializations/snapshot/strategies.sql
+2022-12-02 06:49:51.851415 (MainThread): 06:49:51.851251 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-12-02 06:49:51.853728 (MainThread): 06:49:51.853553 [debug] [MainThread]: Parsing macros/materializations/partition/replace.sql
+2022-12-02 06:49:51.855144 (MainThread): 06:49:51.854978 [debug] [MainThread]: Parsing macros/materializations/partition/helpers.sql
+2022-12-02 06:49:51.863042 (MainThread): 06:49:51.862868 [debug] [MainThread]: Parsing macros/materializations/partition/partition.sql
+2022-12-02 06:49:51.874286 (MainThread): 06:49:51.874103 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+2022-12-02 06:49:51.874892 (MainThread): 06:49:51.874730 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+2022-12-02 06:49:51.876547 (MainThread): 06:49:51.876379 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+2022-12-02 06:49:51.898521 (MainThread): 06:49:51.898323 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+2022-12-02 06:49:51.900352 (MainThread): 06:49:51.900178 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+2022-12-02 06:49:51.904830 (MainThread): 06:49:51.904651 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+2022-12-02 06:49:51.905937 (MainThread): 06:49:51.905772 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+2022-12-02 06:49:51.907024 (MainThread): 06:49:51.906857 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+2022-12-02 06:49:51.908066 (MainThread): 06:49:51.907902 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+2022-12-02 06:49:51.909697 (MainThread): 06:49:51.909524 [debug] [MainThread]: Parsing macros/python_model/python.sql
+2022-12-02 06:49:51.916251 (MainThread): 06:49:51.916077 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+2022-12-02 06:49:51.920549 (MainThread): 06:49:51.920377 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+2022-12-02 06:49:51.923221 (MainThread): 06:49:51.923052 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+2022-12-02 06:49:51.930754 (MainThread): 06:49:51.930574 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+2022-12-02 06:49:51.949927 (MainThread): 06:49:51.949737 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+2022-12-02 06:49:51.952047 (MainThread): 06:49:51.951875 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+2022-12-02 06:49:51.956976 (MainThread): 06:49:51.956801 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+2022-12-02 06:49:51.959045 (MainThread): 06:49:51.958875 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+2022-12-02 06:49:51.971530 (MainThread): 06:49:51.971353 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+2022-12-02 06:49:51.988761 (MainThread): 06:49:51.988573 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-12-02 06:49:51.990661 (MainThread): 06:49:51.990493 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+2022-12-02 06:49:52.004148 (MainThread): 06:49:52.003969 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+2022-12-02 06:49:52.011863 (MainThread): 06:49:52.011681 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+2022-12-02 06:49:52.023041 (MainThread): 06:49:52.022864 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-12-02 06:49:52.040313 (MainThread): 06:49:52.040109 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+2022-12-02 06:49:52.056364 (MainThread): 06:49:52.056159 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-12-02 06:49:52.065099 (MainThread): 06:49:52.064914 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-12-02 06:49:52.066891 (MainThread): 06:49:52.066722 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-12-02 06:49:52.070773 (MainThread): 06:49:52.070594 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+2022-12-02 06:49:52.073381 (MainThread): 06:49:52.073212 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+2022-12-02 06:49:52.074947 (MainThread): 06:49:52.074780 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+2022-12-02 06:49:52.080808 (MainThread): 06:49:52.080623 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+2022-12-02 06:49:52.084767 (MainThread): 06:49:52.084588 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+2022-12-02 06:49:52.090646 (MainThread): 06:49:52.090473 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+2022-12-02 06:49:52.092427 (MainThread): 06:49:52.092017 [debug] [MainThread]: Parsing macros/utils/replace.sql
+2022-12-02 06:49:52.094565 (MainThread): 06:49:52.094363 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+2022-12-02 06:49:52.096006 (MainThread): 06:49:52.095833 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+2022-12-02 06:49:52.097603 (MainThread): 06:49:52.097434 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+2022-12-02 06:49:52.100012 (MainThread): 06:49:52.099841 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+2022-12-02 06:49:52.101387 (MainThread): 06:49:52.101219 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+2022-12-02 06:49:52.104022 (MainThread): 06:49:52.103851 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+2022-12-02 06:49:52.111299 (MainThread): 06:49:52.111127 [debug] [MainThread]: Parsing macros/utils/length.sql
+2022-12-02 06:49:52.112516 (MainThread): 06:49:52.112350 [debug] [MainThread]: Parsing macros/utils/concat.sql
+2022-12-02 06:49:52.113776 (MainThread): 06:49:52.113604 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+2022-12-02 06:49:52.115146 (MainThread): 06:49:52.114977 [debug] [MainThread]: Parsing macros/utils/position.sql
+2022-12-02 06:49:52.116502 (MainThread): 06:49:52.116337 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+2022-12-02 06:49:52.118320 (MainThread): 06:49:52.118151 [debug] [MainThread]: Parsing macros/utils/right.sql
+2022-12-02 06:49:52.119684 (MainThread): 06:49:52.119518 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+2022-12-02 06:49:52.121007 (MainThread): 06:49:52.120841 [debug] [MainThread]: Parsing macros/utils/except.sql
+2022-12-02 06:49:52.122084 (MainThread): 06:49:52.121918 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+2022-12-02 06:49:52.123405 (MainThread): 06:49:52.123238 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+2022-12-02 06:49:52.124732 (MainThread): 06:49:52.124560 [debug] [MainThread]: Parsing macros/utils/hash.sql
+2022-12-02 06:49:52.126082 (MainThread): 06:49:52.125915 [debug] [MainThread]: Parsing macros/utils/literal.sql
+2022-12-02 06:49:52.127271 (MainThread): 06:49:52.127105 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+2022-12-02 06:49:52.128345 (MainThread): 06:49:52.128179 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+2022-12-02 06:49:52.130046 (MainThread): 06:49:52.129874 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+2022-12-02 06:49:52.131368 (MainThread): 06:49:52.131202 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+2022-12-02 06:49:52.133787 (MainThread): 06:49:52.133585 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+2022-12-02 06:49:52.135545 (MainThread): 06:49:52.135376 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+2022-12-02 06:49:52.138383 (MainThread): 06:49:52.138213 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+2022-12-02 06:49:52.140241 (MainThread): 06:49:52.140072 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+2022-12-02 06:49:52.142564 (MainThread): 06:49:52.142394 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+2022-12-02 06:49:52.145073 (MainThread): 06:49:52.144904 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+2022-12-02 06:49:52.160779 (MainThread): 06:49:52.160599 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+2022-12-02 06:49:52.165660 (MainThread): 06:49:52.165490 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+2022-12-02 06:49:52.180568 (MainThread): 06:49:52.180393 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+2022-12-02 06:49:52.183636 (MainThread): 06:49:52.183465 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+2022-12-02 06:49:52.194249 (MainThread): 06:49:52.194076 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+2022-12-02 06:49:52.198031 (MainThread): 06:49:52.197863 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+2022-12-02 06:49:52.205726 (MainThread): 06:49:52.205550 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+2022-12-02 06:49:52.214808 (MainThread): 06:49:52.214629 [debug] [MainThread]: Parsing macros/etc/statement.sql
+2022-12-02 06:49:52.220599 (MainThread): 06:49:52.220426 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+2022-12-02 06:49:52.528529 (MainThread): 06:49:52.528055 [debug] [MainThread]: 1603: static parser failed on incremental.sql
+2022-12-02 06:49:52.534490 (MainThread): 06:49:52.534307 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental.sql
+2022-12-02 06:49:52.589338 (MainThread): 06:49:52.589136 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 2 seed files, 1 source, 0 exposures, 0 metrics
+2022-12-02 06:49:52.589639 (MainThread): 06:49:52  Found 1 model, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 2 seed files, 1 source, 0 exposures, 0 metrics
+2022-12-02 06:49:52.590760 (MainThread): 06:49:52.590580 [info ] [MainThread]: 
+2022-12-02 06:49:52.591009 (MainThread): 06:49:52  
+2022-12-02 06:49:52.591617 (MainThread): 06:49:52.591453 [debug] [MainThread]: Acquiring new doris connection "master"
+2022-12-02 06:49:52.592829 (ThreadPoolExecutor-19_0): 06:49:52.592554 [debug] [ThreadPool]: Acquiring new doris connection "list_"
+2022-12-02 06:49:52.594979 (ThreadPoolExecutor-19_0): 06:49:52.594804 [debug] [ThreadPool]: Using doris connection "list_"
+2022-12-02 06:49:52.595262 (ThreadPoolExecutor-19_0): 06:49:52.595123 [debug] [ThreadPool]: On list_: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "connection_name": "list_"} */
+select distinct schema_name from information_schema.schemata
+2022-12-02 06:49:52.595528 (ThreadPoolExecutor-19_0): 06:49:52.595391 [debug] [ThreadPool]: Opening a new connection, currently in state init
+2022-12-02 06:49:52.598973 (ThreadPoolExecutor-19_0): 06:49:52.598803 [debug] [ThreadPool]: SQL status: 9 rows affected in 0.0 seconds
+2022-12-02 06:49:52.600526 (ThreadPoolExecutor-19_0): 06:49:52.600353 [debug] [ThreadPool]: On list_: Close
+2022-12-02 06:49:52.601932 (ThreadPoolExecutor-20_0): 06:49:52.601725 [debug] [ThreadPool]: Acquiring new doris connection "list__test16699637904132582530_test_basic"
+2022-12-02 06:49:52.603988 (ThreadPoolExecutor-20_0): 06:49:52.603817 [debug] [ThreadPool]: Using doris connection "list__test16699637904132582530_test_basic"
+2022-12-02 06:49:52.604258 (ThreadPoolExecutor-20_0): 06:49:52.604123 [debug] [ThreadPool]: On list__test16699637904132582530_test_basic: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "connection_name": "list__test16699637904132582530_test_basic"} */
+
+    select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type end as table_type
+    from information_schema.tables
+    where table_schema = 'test16699637904132582530_test_basic'
+  
+2022-12-02 06:49:52.604508 (ThreadPoolExecutor-20_0): 06:49:52.604376 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+2022-12-02 06:49:52.611778 (ThreadPoolExecutor-20_0): 06:49:52.611608 [debug] [ThreadPool]: SQL status: 2 rows affected in 0.01 seconds
+2022-12-02 06:49:52.613041 (ThreadPoolExecutor-20_0): 06:49:52.612869 [debug] [ThreadPool]: On list__test16699637904132582530_test_basic: Close
+2022-12-02 06:49:52.614266 (MainThread): 06:49:52.614084 [info ] [MainThread]: Concurrency: 1 threads (target='default')
+2022-12-02 06:49:52.614519 (MainThread): 06:49:52  Concurrency: 1 threads (target='default')
+2022-12-02 06:49:52.614782 (MainThread): 06:49:52.614642 [info ] [MainThread]: 
+2022-12-02 06:49:52.615009 (MainThread): 06:49:52  
+2022-12-02 06:49:52.616785 (Thread-37): 06:49:52.616465 [debug] [Thread-37 ]: Began running node model.incremental.incremental
+2022-12-02 06:49:52.617371 (Thread-37): 06:49:52.617182 [info ] [Thread-37 ]: 1 of 1 START sql incremental model test16699637904132582530_test_basic.incremental  [RUN]
+2022-12-02 06:49:52.617641 (Thread-37): 06:49:52  1 of 1 START sql incremental model test16699637904132582530_test_basic.incremental  [RUN]
+2022-12-02 06:49:52.618359 (Thread-37): 06:49:52.618184 [debug] [Thread-37 ]: Acquiring new doris connection "model.incremental.incremental"
+2022-12-02 06:49:52.618674 (Thread-37): 06:49:52.618534 [debug] [Thread-37 ]: Began compiling node model.incremental.incremental
+2022-12-02 06:49:52.618977 (Thread-37): 06:49:52.618844 [debug] [Thread-37 ]: Compiling model.incremental.incremental
+2022-12-02 06:49:52.623709 (Thread-37): 06:49:52.623513 [debug] [Thread-37 ]: Writing injected SQL for node "model.incremental.incremental"
+2022-12-02 06:49:52.624319 (Thread-37): 06:49:52.624156 [debug] [Thread-37 ]: finished collecting timing info
+2022-12-02 06:49:52.624666 (Thread-37): 06:49:52.624524 [debug] [Thread-37 ]: Began executing node model.incremental.incremental
+2022-12-02 06:49:52.653686 (Thread-37): 06:49:52.653431 [debug] [Thread-37 ]: Using doris connection "model.incremental.incremental"
+2022-12-02 06:49:52.654012 (Thread-37): 06:49:52.653868 [debug] [Thread-37 ]: On model.incremental.incremental: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.incremental.incremental"} */
+
+        select column_name              as `column`,
+       data_type                as 'dtype',
+       character_maximum_length as char_size,
+       numeric_precision,
+       numeric_scale
+from information_schema.columns
+where table_schema = 'test16699637904132582530_test_basic'
+  and table_name = 'incremental'
+    
+2022-12-02 06:49:52.654275 (Thread-37): 06:49:52.654137 [debug] [Thread-37 ]: Opening a new connection, currently in state closed
+2022-12-02 06:49:52.660481 (Thread-37): 06:49:52.660284 [debug] [Thread-37 ]: SQL status: 0 rows affected in 0.01 seconds
+2022-12-02 06:49:52.662163 (Thread-37): 06:49:52.661975 [debug] [Thread-37 ]: Writing runtime sql for node "model.incremental.incremental"
+2022-12-02 06:49:52.662687 (Thread-37): 06:49:52.662525 [debug] [Thread-37 ]: Using doris connection "model.incremental.incremental"
+2022-12-02 06:49:52.662960 (Thread-37): 06:49:52.662826 [debug] [Thread-37 ]: On model.incremental.incremental: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.incremental.incremental"} */
+
+      insert into `test16699637904132582530_test_basic`.`incremental` ()
+    (
+       select 
+       from `test16699637904132582530_test_basic`.`incremental__dbt_tmp`
+    )
+  
+2022-12-02 06:49:52.664216 (Thread-37): 06:49:52.664042 [debug] [Thread-37 ]: doris adapter: Doris database error: (1105, 'errCode = 2, detailMessage = Syntax error in line 3:\n...est_basic`.`incremental` ()\n                             ^\nEncountered: )\nExpected: IDENTIFIER\n'), sql: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "test", "target_name": "default", "node_id": "model.incremental.incremental"} */
+
+      insert into `test16699637904132582530_test_basic`.`incremental` ()
+    (
+       select 
+       from `test16699637904132582530_test_basic`.`incremental__dbt_tmp`
+    )
+  
+2022-12-02 06:49:52.664609 (Thread-37): 06:49:52.664474 [debug] [Thread-37 ]: finished collecting timing info
+2022-12-02 06:49:52.664933 (Thread-37): 06:49:52.664797 [debug] [Thread-37 ]: On model.incremental.incremental: Close
+2022-12-02 06:49:52.665658 (Thread-37): 06:49:52.665493 [debug] [Thread-37 ]: Database Error in model incremental (models/incremental.sql)
+  (1105, 'errCode = 2, detailMessage = Syntax error in line 3:\n...est_basic`.`incremental` ()\n                             ^\nEncountered: )\nExpected: IDENTIFIER\n')
+  compiled Code at target/run/incremental/models/incremental.sql
+2022-12-02 06:49:52.666258 (Thread-37): 06:49:52.666055 [error] [Thread-37 ]: 1 of 1 ERROR creating sql incremental model test16699637904132582530_test_basic.incremental  [ERROR in 0.05s]
+2022-12-02 06:49:52.666526 (Thread-37): 06:49:52  1 of 1 ERROR creating sql incremental model test16699637904132582530_test_basic.incremental  [ERROR in 0.05s]
+2022-12-02 06:49:52.666981 (Thread-37): 06:49:52.666831 [debug] [Thread-37 ]: Finished running node model.incremental.incremental
+2022-12-02 06:49:52.668869 (MainThread): 06:49:52.668560 [debug] [MainThread]: Acquiring new doris connection "master"
+2022-12-02 06:49:52.669597 (MainThread): 06:49:52.669433 [info ] [MainThread]: 
+2022-12-02 06:49:52.669869 (MainThread): 06:49:52  
+2022-12-02 06:49:52.670137 (MainThread): 06:49:52.670001 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 0.08 seconds (0.08s).
+2022-12-02 06:49:52.670366 (MainThread): 06:49:52  Finished running 1 incremental model in 0 hours 0 minutes and 0.08 seconds (0.08s).
+2022-12-02 06:49:52.670621 (MainThread): 06:49:52.670492 [debug] [MainThread]: Connection 'master' was properly closed.
+2022-12-02 06:49:52.670870 (MainThread): 06:49:52.670743 [debug] [MainThread]: Connection 'model.incremental.incremental' was properly closed.
+2022-12-02 06:49:52.677890 (MainThread): 06:49:52.677714 [info ] [MainThread]: 
+2022-12-02 06:49:52.678161 (MainThread): 06:49:52  
+2022-12-02 06:49:52.678448 (MainThread): 06:49:52.678292 [info ] [MainThread]: Completed with 1 error and 0 warnings:
+2022-12-02 06:49:52.678703 (MainThread): 06:49:52  Completed with 1 error and 0 warnings:
+2022-12-02 06:49:52.678960 (MainThread): 06:49:52.678832 [info ] [MainThread]: 
+2022-12-02 06:49:52.679191 (MainThread): 06:49:52  
+2022-12-02 06:49:52.679450 (MainThread): 06:49:52.679317 [error] [MainThread]: Database Error in model incremental (models/incremental.sql)
+2022-12-02 06:49:52.679680 (MainThread): 06:49:52  Database Error in model incremental (models/incremental.sql)
+2022-12-02 06:49:52.679934 (MainThread): 06:49:52.679807 [error] [MainThread]:   (1105, 'errCode = 2, detailMessage = Syntax error in line 3:\n...est_basic`.`incremental` ()\n                             ^\nEncountered: )\nExpected: IDENTIFIER\n')
+2022-12-02 06:49:52.680153 (MainThread): 06:49:52    (1105, 'errCode = 2, detailMessage = Syntax error in line 3:\n...est_basic`.`incremental` ()\n                             ^\nEncountered: )\nExpected: IDENTIFIER\n')
+2022-12-02 06:49:52.680389 (MainThread): 06:49:52.680266 [error] [MainThread]:   compiled Code at target/run/incremental/models/incremental.sql
+2022-12-02 06:49:52.680605 (MainThread): 06:49:52    compiled Code at target/run/incremental/models/incremental.sql
+2022-12-02 06:49:52.680863 (MainThread): 06:49:52.680735 [info ] [MainThread]: 
+2022-12-02 06:49:52.681091 (MainThread): 06:49:52  
+2022-12-02 06:49:52.681345 (MainThread): 06:49:52.681216 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2022-12-02 06:49:52.681573 (MainThread): 06:49:52  Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2022-12-02 06:49:52.681970 (MainThread): 06:49:52.681828 [debug] [MainThread]: Flushing usage events

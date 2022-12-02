@@ -15,8 +15,8 @@ def dbt_profile_target():
         return {
         "type": "doris",
         "threads": 1,
-        "host": os.getenv("DORIS_TEST_HOST", "172.31.127.243"),
+        "host": os.getenv("DORIS_TEST_HOST", "127.0.0.1"),
         "user": os.getenv("DORIS_TEST_USER", "root"),
         "password": os.getenv("DORIS_TEST_PASSWORD", ""),
-        "port": os.getenv("DORIS_TEST_PORT", 8211),
+        "port": os.getenv("DORIS_TEST_PORT", 9030),
     }

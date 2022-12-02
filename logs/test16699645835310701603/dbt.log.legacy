@@ -1,0 +1,148 @@
+2022-12-02 07:03:03.723293 (MainThread): 07:03:03.723090 [debug] [MainThread]: Connection '_test' was properly closed.
+2022-12-02 07:03:03.732859 (MainThread): 
+
+============================== 2022-12-02 07:03:03.732647 | 3d66d520-8795-4873-996f-ef873a54c760 ==============================
+07:03:03.732656 [info ] [MainThread]: Running with dbt=1.3.1
+2022-12-02 07:03:03.733139 (MainThread): 07:03:03  Running with dbt=1.3.1
+2022-12-02 07:03:03.733438 (MainThread): 07:03:03.733283 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/tmp/pytest-of-hdc/pytest-87/profile3', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+2022-12-02 07:03:03.733707 (MainThread): 07:03:03.733566 [debug] [MainThread]: Tracking: do not track
+2022-12-02 07:03:03.745333 (MainThread): 07:03:03.745136 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+2022-12-02 07:03:03.745618 (MainThread): 07:03:03  Partial parse save file not found. Starting full parse.
+2022-12-02 07:03:03.761341 (MainThread): 07:03:03.761120 [debug] [MainThread]: Parsing macros/materializations/incremental/help.sql
+2022-12-02 07:03:03.768025 (MainThread): 07:03:03.767837 [debug] [MainThread]: Parsing macros/materializations/incremental/incremental.sql
+2022-12-02 07:03:03.776869 (MainThread): 07:03:03.776671 [debug] [MainThread]: Parsing macros/materializations/view/create_view_as.sql
+2022-12-02 07:03:03.778046 (MainThread): 07:03:03.777872 [debug] [MainThread]: Parsing macros/materializations/seed/helpers.sql
+2022-12-02 07:03:03.782001 (MainThread): 07:03:03.781825 [debug] [MainThread]: Parsing macros/materializations/table/create_table_as.sql
+2022-12-02 07:03:03.785647 (MainThread): 07:03:03.785471 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot.sql
+2022-12-02 07:03:03.804289 (MainThread): 07:03:03.804073 [debug] [MainThread]: Parsing macros/materializations/snapshot/strategies.sql
+2022-12-02 07:03:03.805395 (MainThread): 07:03:03.805218 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-12-02 07:03:03.807770 (MainThread): 07:03:03.807586 [debug] [MainThread]: Parsing macros/materializations/partition/replace.sql
+2022-12-02 07:03:03.809237 (MainThread): 07:03:03.809064 [debug] [MainThread]: Parsing macros/materializations/partition/helpers.sql
+2022-12-02 07:03:03.817268 (MainThread): 07:03:03.817085 [debug] [MainThread]: Parsing macros/materializations/partition/partition.sql
+2022-12-02 07:03:03.828815 (MainThread): 07:03:03.828622 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+2022-12-02 07:03:03.829425 (MainThread): 07:03:03.829262 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+2022-12-02 07:03:03.831127 (MainThread): 07:03:03.830953 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+2022-12-02 07:03:03.853669 (MainThread): 07:03:03.853439 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+2022-12-02 07:03:03.855576 (MainThread): 07:03:03.855390 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+2022-12-02 07:03:03.860170 (MainThread): 07:03:03.859990 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+2022-12-02 07:03:03.861310 (MainThread): 07:03:03.861136 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+2022-12-02 07:03:03.862284 (MainThread): 07:03:03.862108 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+2022-12-02 07:03:03.863540 (MainThread): 07:03:03.863361 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+2022-12-02 07:03:03.865230 (MainThread): 07:03:03.865057 [debug] [MainThread]: Parsing macros/python_model/python.sql
+2022-12-02 07:03:03.871971 (MainThread): 07:03:03.871791 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+2022-12-02 07:03:03.876389 (MainThread): 07:03:03.876207 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+2022-12-02 07:03:03.879142 (MainThread): 07:03:03.878961 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+2022-12-02 07:03:03.886922 (MainThread): 07:03:03.886741 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+2022-12-02 07:03:03.906495 (MainThread): 07:03:03.906291 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+2022-12-02 07:03:03.908674 (MainThread): 07:03:03.908494 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+2022-12-02 07:03:03.913740 (MainThread): 07:03:03.913544 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+2022-12-02 07:03:03.915871 (MainThread): 07:03:03.915687 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+2022-12-02 07:03:03.929469 (MainThread): 07:03:03.929284 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+2022-12-02 07:03:03.947310 (MainThread): 07:03:03.947121 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-12-02 07:03:03.949289 (MainThread): 07:03:03.949110 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+2022-12-02 07:03:03.963138 (MainThread): 07:03:03.962947 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+2022-12-02 07:03:03.971047 (MainThread): 07:03:03.970860 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+2022-12-02 07:03:03.982680 (MainThread): 07:03:03.982476 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-12-02 07:03:04.000714 (MainThread): 07:03:04.000498 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+2022-12-02 07:03:04.017534 (MainThread): 07:03:04.017295 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-12-02 07:03:04.026804 (MainThread): 07:03:04.026605 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-12-02 07:03:04.028655 (MainThread): 07:03:04.028476 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-12-02 07:03:04.032665 (MainThread): 07:03:04.032474 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+2022-12-02 07:03:04.035396 (MainThread): 07:03:04.035216 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+2022-12-02 07:03:04.037016 (MainThread): 07:03:04.036839 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+2022-12-02 07:03:04.043036 (MainThread): 07:03:04.042854 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+2022-12-02 07:03:04.047127 (MainThread): 07:03:04.046946 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+2022-12-02 07:03:04.053212 (MainThread): 07:03:04.053030 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+2022-12-02 07:03:04.054800 (MainThread): 07:03:04.054616 [debug] [MainThread]: Parsing macros/utils/replace.sql
+2022-12-02 07:03:04.056366 (MainThread): 07:03:04.056190 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+2022-12-02 07:03:04.057764 (MainThread): 07:03:04.057577 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+2022-12-02 07:03:04.059343 (MainThread): 07:03:04.059167 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+2022-12-02 07:03:04.061747 (MainThread): 07:03:04.061555 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+2022-12-02 07:03:04.063172 (MainThread): 07:03:04.062995 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+2022-12-02 07:03:04.065887 (MainThread): 07:03:04.065709 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+2022-12-02 07:03:04.073342 (MainThread): 07:03:04.073161 [debug] [MainThread]: Parsing macros/utils/length.sql
+2022-12-02 07:03:04.074596 (MainThread): 07:03:04.074419 [debug] [MainThread]: Parsing macros/utils/concat.sql
+2022-12-02 07:03:04.075901 (MainThread): 07:03:04.075724 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+2022-12-02 07:03:04.077309 (MainThread): 07:03:04.077132 [debug] [MainThread]: Parsing macros/utils/position.sql
+2022-12-02 07:03:04.078710 (MainThread): 07:03:04.078528 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+2022-12-02 07:03:04.080585 (MainThread): 07:03:04.080406 [debug] [MainThread]: Parsing macros/utils/right.sql
+2022-12-02 07:03:04.082005 (MainThread): 07:03:04.081828 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+2022-12-02 07:03:04.083374 (MainThread): 07:03:04.083200 [debug] [MainThread]: Parsing macros/utils/except.sql
+2022-12-02 07:03:04.084487 (MainThread): 07:03:04.084310 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+2022-12-02 07:03:04.085852 (MainThread): 07:03:04.085669 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+2022-12-02 07:03:04.087226 (MainThread): 07:03:04.087048 [debug] [MainThread]: Parsing macros/utils/hash.sql
+2022-12-02 07:03:04.088608 (MainThread): 07:03:04.088436 [debug] [MainThread]: Parsing macros/utils/literal.sql
+2022-12-02 07:03:04.089847 (MainThread): 07:03:04.089663 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+2022-12-02 07:03:04.090948 (MainThread): 07:03:04.090774 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+2022-12-02 07:03:04.092182 (MainThread): 07:03:04.092008 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+2022-12-02 07:03:04.093707 (MainThread): 07:03:04.093522 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+2022-12-02 07:03:04.096146 (MainThread): 07:03:04.095969 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+2022-12-02 07:03:04.097953 (MainThread): 07:03:04.097777 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+2022-12-02 07:03:04.100843 (MainThread): 07:03:04.100658 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+2022-12-02 07:03:04.102760 (MainThread): 07:03:04.102576 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+2022-12-02 07:03:04.105137 (MainThread): 07:03:04.104961 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+2022-12-02 07:03:04.107710 (MainThread): 07:03:04.107518 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+2022-12-02 07:03:04.123634 (MainThread): 07:03:04.123442 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+2022-12-02 07:03:04.128641 (MainThread): 07:03:04.128457 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+2022-12-02 07:03:04.143986 (MainThread): 07:03:04.143793 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+2022-12-02 07:03:04.147132 (MainThread): 07:03:04.146953 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+2022-12-02 07:03:04.157984 (MainThread): 07:03:04.157799 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+2022-12-02 07:03:04.161878 (MainThread): 07:03:04.161698 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+2022-12-02 07:03:04.169774 (MainThread): 07:03:04.169583 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+2022-12-02 07:03:04.179170 (MainThread): 07:03:04.178984 [debug] [MainThread]: Parsing macros/etc/statement.sql
+2022-12-02 07:03:04.185147 (MainThread): 07:03:04.184964 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+2022-12-02 07:03:04.531634 (MainThread): 07:03:04.531370 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-12-02 07:03:04.531964 (MainThread): 07:03:04  Found 0 models, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-12-02 07:03:04.532661 (MainThread): 07:03:04.532487 [info ] [MainThread]: 
+2022-12-02 07:03:04.532934 (MainThread): 07:03:04  
+2022-12-02 07:03:04.533219 (MainThread): 07:03:04.533072 [warn ] [MainThread]: [WARNING]: Nothing to do. Try checking your model configs and model specification args
+2022-12-02 07:03:04.533464 (MainThread): 07:03:04  [WARNING]: Nothing to do. Try checking your model configs and model specification args
+2022-12-02 07:03:04.539009 (MainThread): 07:03:04.538815 [info ] [MainThread]: 
+2022-12-02 07:03:04.539316 (MainThread): 07:03:04  
+2022-12-02 07:03:04.539620 (MainThread): 07:03:04.539457 [info ] [MainThread]: Completed successfully
+2022-12-02 07:03:04.539900 (MainThread): 07:03:04  Completed successfully
+2022-12-02 07:03:04.540169 (MainThread): 07:03:04.540034 [info ] [MainThread]: 
+2022-12-02 07:03:04.540418 (MainThread): 07:03:04  
+2022-12-02 07:03:04.540687 (MainThread): 07:03:04.540550 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+2022-12-02 07:03:04.540945 (MainThread): 07:03:04  Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+2022-12-02 07:03:04.541288 (MainThread): 07:03:04.541143 [debug] [MainThread]: Flushing usage events
+2022-12-02 07:03:04.560674 (MainThread): 
+
+============================== 2022-12-02 07:03:04.560442 | 3d66d520-8795-4873-996f-ef873a54c760 ==============================
+07:03:04.560452 [info ] [MainThread]: Running with dbt=1.3.1
+2022-12-02 07:03:04.561007 (MainThread): 07:03:04  Running with dbt=1.3.1
+2022-12-02 07:03:04.561309 (MainThread): 07:03:04.561153 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/tmp/pytest-of-hdc/pytest-87/profile3', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+2022-12-02 07:03:04.561571 (MainThread): 07:03:04.561437 [debug] [MainThread]: Tracking: do not track
+2022-12-02 07:03:04.595542 (MainThread): 07:03:04.595298 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-12-02 07:03:04.595880 (MainThread): 07:03:04.595735 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+2022-12-02 07:03:04.607328 (MainThread): 07:03:04.607097 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-12-02 07:03:04.607648 (MainThread): 07:03:04  Found 0 models, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-12-02 07:03:04.608331 (MainThread): 07:03:04.608157 [info ] [MainThread]: 
+2022-12-02 07:03:04.608592 (MainThread): 07:03:04  
+2022-12-02 07:03:04.608883 (MainThread): 07:03:04.608733 [warn ] [MainThread]: [WARNING]: Nothing to do. Try checking your model configs and model specification args
+2022-12-02 07:03:04.609129 (MainThread): 07:03:04  [WARNING]: Nothing to do. Try checking your model configs and model specification args
+2022-12-02 07:03:04.614584 (MainThread): 07:03:04.614387 [debug] [MainThread]: Flushing usage events
+2022-12-02 07:03:04.634281 (MainThread): 
+
+============================== 2022-12-02 07:03:04.634054 | 3d66d520-8795-4873-996f-ef873a54c760 ==============================
+07:03:04.634064 [info ] [MainThread]: Running with dbt=1.3.1
+2022-12-02 07:03:04.634598 (MainThread): 07:03:04  Running with dbt=1.3.1
+2022-12-02 07:03:04.634907 (MainThread): 07:03:04.634751 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/tmp/pytest-of-hdc/pytest-87/profile3', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'compile': True, 'which': 'generate', 'rpc_method': 'docs.generate', 'indirect_selection': 'eager'}
+2022-12-02 07:03:04.635169 (MainThread): 07:03:04.635033 [debug] [MainThread]: Tracking: do not track
+2022-12-02 07:03:04.668488 (MainThread): 07:03:04.668227 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-12-02 07:03:04.668838 (MainThread): 07:03:04.668679 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+2022-12-02 07:03:04.680876 (MainThread): 07:03:04.680604 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-12-02 07:03:04.681181 (MainThread): 07:03:04  Found 0 models, 0 tests, 0 snapshots, 0 analyses, 298 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-12-02 07:03:04.681876 (MainThread): 07:03:04.681704 [info ] [MainThread]: 
+2022-12-02 07:03:04.682144 (MainThread): 07:03:04  
+2022-12-02 07:03:04.682421 (MainThread): 07:03:04.682276 [warn ] [MainThread]: [WARNING]: Nothing to do. Try checking your model configs and model specification args
+2022-12-02 07:03:04.682666 (MainThread): 07:03:04  [WARNING]: Nothing to do. Try checking your model configs and model specification args
+2022-12-02 07:03:04.688061 (MainThread): 07:03:04.687879 [info ] [MainThread]: Done.
+2022-12-02 07:03:04.688355 (MainThread): 07:03:04  Done.
+2022-12-02 07:03:04.690125 (MainThread): 07:03:04.689942 [debug] [MainThread]: Acquiring new doris connection "generate_catalog"
+2022-12-02 07:03:04.690408 (MainThread): 07:03:04.690270 [info ] [MainThread]: Building catalog
+2022-12-02 07:03:04.690643 (MainThread): 07:03:04  Building catalog
+2022-12-02 07:03:04.696485 (MainThread): 07:03:04.696297 [info ] [MainThread]: Catalog written to /tmp/pytest-of-hdc/pytest-87/project3/target/catalog.json
+2022-12-02 07:03:04.696770 (MainThread): 07:03:04  Catalog written to /tmp/pytest-of-hdc/pytest-87/project3/target/catalog.json
+2022-12-02 07:03:04.697124 (MainThread): 07:03:04.696978 [debug] [MainThread]: Flushing usage events
+2022-12-02 07:03:04.697429 (MainThread): 07:03:04.697288 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
