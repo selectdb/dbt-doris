@@ -57,6 +57,7 @@ class DorisConnectionManager(SQLConnectionManager):
             "port": credentials.port,
             "user": credentials.username,
             "password": credentials.password,
+            "charset": "utf8",
         }
         try:
             connection.handle = MySQLdb.connect(**kwargs)
