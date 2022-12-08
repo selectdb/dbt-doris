@@ -2,8 +2,8 @@ from contextlib import contextmanager
 from dataclasses import dataclass
 from typing import ContextManager, Optional, Union
 
-import MySQLdb
-import MySQLdb.cursors
+import mysql.connector
+
 from dbt import exceptions
 from dbt.adapters.base import Credentials
 from dbt.adapters.sql import SQLConnectionManager
@@ -22,6 +22,7 @@ class DorisCredentials(Credentials):
     database: Optional[str] = None
     schema: Optional[str] = None
 
+
     @property
     def type(self):
         return "doris"
@@ -31,7 +32,7 @@ class DorisCredentials(Credentials):
 
     @property
     def unique_field(self) -> str:
-        return self.host
+        return self.schema
 
     def __post_init__(self):
         if self.database is not None and self.database != self.schema:
@@ -51,42 +52,65 @@ class DorisConnectionManager(SQLConnectionManager):
         if connection.state == "open":
             logger.debug("Connection is already open, skipping open")
             return connection
-        credentials = connection.credentials
+        credentials = cls.get_credentials(connection.credentials)
         kwargs = {
             "host": credentials.host,
             "port": credentials.port,
             "user": credentials.username,
             "password": credentials.password,
+            "buffered": True,
             "charset": "utf8",
+            "get_warnings": True,
         }
+
         try:
-            connection.handle = MySQLdb.connect(**kwargs)
-            connection.state = ConnectionState.OPEN
-        except MySQLdb.Error as e:
-            logger.debug(f"Error connecting to database: {e}")
-            connection.handle = None
-            connection.state = ConnectionState.FAIL
-            raise exceptions.FailedToConnectException(str(e))
+            connection.handle = mysql.connector.connect(**kwargs)
+            connection.state = 'open'
+        except mysql.connector.Error:
+
+            try:
+                logger.debug("Failed connection without supplying the `database`. "
+                             "Trying again with `database` included.")
+                connection.handle = mysql.connector.connect(**kwargs)
+                connection.state = 'open'
+            except mysql.connector.Error as e:
+
+                logger.debug("Got an error when attempting to open a mysql "
+                             "connection: '{}'"
+                             .format(e))
+
+                connection.handle = None
+                connection.state = 'fail'
+
+                raise dbt.exceptions.FailedToConnectException(str(e))
         return connection
 
+    @classmethod
+    def get_credentials(cls, credentials):
+        return credentials
+
+    @classmethod
     def cancel(self, connection: Connection):
         connection.handle.close()
 
     @classmethod
-    def get_response(cls, cursor: MySQLdb.cursors.Cursor) -> Union[AdapterResponse, str]:
-        code = "Unknown cursor state/status"
-        rows = cursor.rowcount
+    def get_response(cls, cursor) -> Union[AdapterResponse, str]:
+        code = "SUCCESS"
+        num_rows = 0
+
+        if cursor is not None and cursor.rowcount is not None:
+            num_rows = cursor.rowcount
         return AdapterResponse(
             code=code,
-            _message=f"{rows} rows affected",
-            rows_affected=rows,
+            _message=f"{num_rows} rows affected",
+            rows_affected=num_rows,
         )
 
-    @contextmanager  # type: ignore
-    def exception_handler(self, sql: str) -> ContextManager:  # type: ignore
+    @contextmanager  
+    def exception_handler(self, sql: str) -> ContextManager: 
         try:
             yield
-        except MySQLdb.DatabaseError as e:
+        except mysql.connector.DatabaseError as e:
             logger.debug(f"Doris database error: {e}, sql: {sql}")
             raise exceptions.DatabaseException(str(e)) from e
         except Exception as e:
@@ -95,7 +119,7 @@ class DorisConnectionManager(SQLConnectionManager):
                 raise e
             raise exceptions.RuntimeException(str(e)) from e
 
-
+    @classmethod
     def begin(self):
         """
         https://doris.apache.org/docs/data-operate/import/import-scenes/load-atomicity/
@@ -103,5 +127,6 @@ class DorisConnectionManager(SQLConnectionManager):
         """
         pass
 
+    @classmethod
     def commit(self):
         pass

@@ -98,13 +98,18 @@
     {% if to_relation.is_view %}
     {% set results = run_query('show create view ' + from_relation.render() ) %}
     create view {{ to_relation }} as {{ results[0]['Create View'].replace(from_relation.table, to_relation.table).split('AS',1)[1] }}
-    drop view if exists {{ from_relation }};
     {% else %}
     alter table {{ from_relation }} rename {{ to_relation.table }}
     {% endif %}
   {% endcall %}
-{%- endmacro %}
 
+  {% if to_relation.is_view %}
+    {% call statement('rename_relation_end_drop_old') %}
+      drop view if exists {{ from_relation }}
+    {% endcall %}
+  {% endif %}
+
+  {%- endmacro %}
 
 {% macro doris__timestimp_id() -%}
  {{ return( (modules.datetime.datetime.now() ~ "").replace('-','').replace(':','').replace('.','').replace(' ','') ) }}
