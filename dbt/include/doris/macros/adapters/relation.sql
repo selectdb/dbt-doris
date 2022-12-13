@@ -123,3 +123,19 @@
     WITH LABEL dbt_doris_label_{{ lable_suffix_id }}
   {% endif %}  
 {%- endmacro %}
+
+{% macro doris__get_or_create_relation(database, schema, identifier, type) %}
+  {%- set target_relation = adapter.get_relation(database=database, schema=schema, identifier=identifier) %}
+  
+  {% if target_relation %}
+    {% do return([true, target_relation]) %}
+  {% endif %}
+  
+  {%- set new_relation = api.Relation.create(
+      database=none,
+      schema=schema,
+      identifier=identifier,
+      type=type
+  ) -%}
+  {% do return([false, new_relation]) %}
+{% endmacro %}
