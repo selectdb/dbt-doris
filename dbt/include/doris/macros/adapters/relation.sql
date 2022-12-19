@@ -139,3 +139,7 @@
   ) -%}
   {% do return([false, new_relation]) %}
 {% endmacro %}
+
+{% macro catalog_source(catalog,database,table) -%}
+  `{{catalog}}`.`{{database}}`.`{{table}}` 
+{%- endmacro %}
