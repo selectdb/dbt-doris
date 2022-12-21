@@ -80,11 +80,11 @@ class TestIncrementaldoris(BaseIncremental):
 class TestGenericTestsdoris(BaseGenericTests):
     pass
 
-@pytest.mark.skip(reason="Snapshot for doris not supported currently")
+@pytest.mark.skip(reason="Snapshot for doris table model bust be 'unique'")
 class TestSnapshotCheckColsdoris(BaseSnapshotCheckCols):
     pass
 
-@pytest.mark.skip(reason="Snapshot for doris not supported currently")
+@pytest.mark.skip(reason="Snapshot for doris table model bust be 'unique'")
 class TestSnapshotTimestampdoris(BaseSnapshotTimestamp):
     pass
 

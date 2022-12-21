@@ -109,11 +109,7 @@ class DorisAdapter(SQLAdapter):
 
     def get_catalog(self, manifest):
         schema_map = self._get_catalog_schemas(manifest)
-        if len(schema_map) > 1:
-            dbt.exceptions.raise_compiler_error(
-                f"Expected only one database in get_catalog, found " f"{list(schema_map)}"
-            )
-
+        
         with executor(self.config) as tpe:
             futures: List[Future[agate.Table]] = []
             for info, schemas in schema_map.items():
@@ -165,3 +161,11 @@ class DorisAdapter(SQLAdapter):
             )
 
         return super()._get_one_catalog(information_schema, schemas, manifest)
+
+    # Methods used in adapter tests
+    def timestamp_add_sql(self, add_to: str, number: int = 1, interval: str = "hour") -> str:
+        # for backwards compatibility, we're compelled to set some sort of
+        # default. A lot of searching has lead me to believe that the
+        # '+ interval' syntax used in postgres/redshift is relatively common
+        # and might even be the SQL standard's intention.
+        return f"{add_to} + interval {number} {interval}"    
