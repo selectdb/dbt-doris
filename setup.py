@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 from setuptools import find_namespace_packages, setup
 
-package_name = "dbt-doris"
+package_name = "dbt-selectdb"
 # make sure this always matches dbt/adapters/{adapter}/__version__.py
 package_version = "1.3.1"
+dbt_core_version = "1.3.0"
 description = """The doris/selectdb adapter plugin for dbt, Original code fork from Apache Doris"""
 
 setup(
