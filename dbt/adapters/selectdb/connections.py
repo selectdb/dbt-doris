@@ -10,11 +10,11 @@ from dbt.adapters.sql import SQLConnectionManager
 from dbt.contracts.connection import AdapterResponse, Connection, ConnectionState
 from dbt.events import AdapterLogger
 
-logger = AdapterLogger("doris")
+logger = AdapterLogger("selectdb")
 
 
 @dataclass
-class DorisCredentials(Credentials):
+class SelectdbCredentials(Credentials):
     host: str = "127.0.0.1"
     port: int = 9030
     username: str = "root"
@@ -25,7 +25,7 @@ class DorisCredentials(Credentials):
 
     @property
     def type(self):
-        return "doris"
+        return "selectdb"
 
     def _connection_keys(self):
         return "host", "port", "user", "schema"
@@ -39,13 +39,13 @@ class DorisCredentials(Credentials):
             raise exceptions.RuntimeException(
                 f"    schema: {self.schema} \n"
                 f"    database: {self.database} \n"
-                f"On Doris, database must be omitted or have the same value as"
+                f"On SelectDB, database must be omitted or have the same value as"
                 f" schema."
             )
 
 
-class DorisConnectionManager(SQLConnectionManager):
-    TYPE = "doris"
+class SelectdbConnectionManager(SQLConnectionManager):
+    TYPE = "selectdb"
 
     @classmethod
     def open(cls, connection: Connection) -> Connection:
@@ -111,7 +111,7 @@ class DorisConnectionManager(SQLConnectionManager):
         try:
             yield
         except mysql.connector.DatabaseError as e:
-            logger.debug(f"Doris database error: {e}, sql: {sql}")
+            logger.debug(f"SelectDB database error: {e}, sql: {sql}")
             raise exceptions.DatabaseException(str(e)) from e
         except Exception as e:
             logger.debug(f"Error running SQL: {sql}")
@@ -122,8 +122,7 @@ class DorisConnectionManager(SQLConnectionManager):
     @classmethod
     def begin(self):
         """
-        https://doris.apache.org/docs/data-operate/import/import-scenes/load-atomicity/
-        Doris's inserting always transaction, ignore it
+        SelectDB's inserting always transaction, ignore it
         """
         pass
 

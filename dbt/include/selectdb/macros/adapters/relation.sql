@@ -1,10 +1,10 @@
-{% macro doris__engine() -%}
+{% macro selectdb__engine() -%}
     {% set label = 'ENGINE' %}
     {% set engine = config.get('engine', 'OLAP') %}
     {{ label }} = {{ engine }}
 {%- endmacro %}
 
-{% macro doris__partition_by() -%}
+{% macro selectdb__partition_by() -%}
   {% set cols = config.get('partition_by') %}
   {% set partition_type = config.get('partition_type', 'RANGE') %}
   {% if cols is not none %}
@@ -23,7 +23,7 @@
   {% endif %}
 {%- endmacro %}
 
-{% macro doris__duplicate_key() -%}
+{% macro selectdb__duplicate_key() -%}
   {% set cols = config.get('duplicate_key', validator=validation.any[list]) %}
   {% if cols is not none %}
     DUPLICATE KEY (
@@ -35,7 +35,7 @@
   {% endif %}
 {%- endmacro %}
 
-{% macro doris__unique_key() -%}
+{% macro selectdb__unique_key() -%}
   {% set cols = config.get('unique_key', validator=validation.any[list]) %}
   {% if cols is not none %}
     UNIQUE KEY (
@@ -47,10 +47,11 @@
   {% endif %}
 {%- endmacro %}
 
-{% macro doris__distributed_by(column_names) -%}
+{% macro selectdb__distributed_by(column_names) -%}
   {% set label = 'DISTRIBUTED BY HASH' %}
   {% set engine = config.get('engine', validator=validation.any[basestring]) %}
   {% set cols = config.get('distributed_by', validator=validation.any[list]) %}
+  {% set buckets = config.get('buckets', validator=validation.any[int]) %}
   {% if cols is none and engine in [none,'OLAP'] %}
     {% set cols = column_names %}
   {% endif %}
@@ -59,12 +60,15 @@
       {% for item in cols %}
         {{ item }}{% if not loop.last %},{% endif %}
       {% endfor %}
-    ) BUCKETS {{ config.get('buckets', validator=validation.any[int]) or 1 }}
+    ) 
+    {% if buckets is not none  %}
+      BUCKETS {{ buckets }}
+    {% endif %}
   {% endif %}
 {%- endmacro %}
 
-{% macro doris__properties() -%}
-  {% set properties = config.get('properties', validator=validation.any[dict]) or {"replication_num":"1"} %}
+{% macro selectdb__properties() -%}
+  {% set properties = config.get('properties', validator=validation.any[dict]) %}
   {% if properties is not none %}
     PROPERTIES (
         {% for key, value in properties.items() %}
@@ -74,7 +78,7 @@
   {% endif %}
 {%- endmacro%}
 
-{% macro doris__drop_relation(relation) -%}
+{% macro selectdb__drop_relation(relation) -%}
     {% set relation_type = relation.type %}
     {% if relation_type is none %}
         {% set relation_type = 'table' %}
@@ -84,13 +88,13 @@
     {% endcall %}
 {%- endmacro %}
 
-{% macro doris__truncate_relation(relation) -%}
+{% macro selectdb__truncate_relation(relation) -%}
     {% call statement('truncate_relation') %}
       truncate table {{ relation }}
     {% endcall %}
 {%- endmacro %}
 
-{% macro doris__rename_relation(from_relation, to_relation) -%}
+{% macro selectdb__rename_relation(from_relation, to_relation) -%}
   {% call statement('drop_relation') %}
     drop {{ to_relation.type }} if exists {{ to_relation }}
   {% endcall %}
@@ -111,20 +115,20 @@
 
   {%- endmacro %}
 
-{% macro doris__timestimp_id() -%}
+{% macro selectdb__timestimp_id() -%}
  {{ return( (modules.datetime.datetime.now() ~ "").replace('-','').replace(':','').replace('.','').replace(' ','') ) }}
 {%- endmacro %}
 
-{% macro doris__with_label() -%}
+{% macro selectdb__with_label() -%}
   {% set lable_suffix_id = config.get('label_id', validator=validation.any[basestring]) %}
   {% if lable_suffix_id in [none,'DEFAULT'] %}
-    WITH LABEL dbt_doris_label_{{doris__timestimp_id()}}
+    WITH LABEL dbt_selectdb_label_{{selectdb__timestimp_id()}}
   {% else %}
-    WITH LABEL dbt_doris_label_{{ lable_suffix_id }}
+    WITH LABEL dbt_selectdb_label_{{ lable_suffix_id }}
   {% endif %}  
 {%- endmacro %}
 
-{% macro doris__get_or_create_relation(database, schema, identifier, type) %}
+{% macro selectdb__get_or_create_relation(database, schema, identifier, type) %}
   {%- set target_relation = adapter.get_relation(database=database, schema=schema, identifier=identifier) %}
   
   {% if target_relation %}

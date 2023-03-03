@@ -15,7 +15,7 @@ from dbt.tests.adapter.basic.test_snapshot_timestamp import BaseSnapshotTimestam
 from dbt.tests.adapter.basic.test_adapter_methods import BaseAdapterMethod
 
 
-class TestSimpleMaterializationsdoris(BaseSimpleMaterializations):
+class TestSimpleMaterializationsselectdb(BaseSimpleMaterializations):
     def test_base(self, project):
         results = run_dbt(["seed"])
         assert len(results) == 1
@@ -39,16 +39,16 @@ class TestSimpleMaterializationsdoris(BaseSimpleMaterializations):
         check_relations_equal(project.adapter, ["base", "view_model", "table_model", "swappable"])
     
 
-class TestSingularTestsdoris(BaseSingularTests):
+class TestSingularTestsselectdb(BaseSingularTests):
     pass
 
-class TestSingularTestsEphemeraldoris(BaseSingularTestsEphemeral):
+class TestSingularTestsEphemeralselectdb(BaseSingularTestsEphemeral):
     pass
 
-class TestEmptydoris(BaseEmpty):
+class TestEmptyselectdb(BaseEmpty):
     pass
 
-class TestEphemeraldoris(BaseEphemeral):
+class TestEphemeralselectdb(BaseEphemeral):
     def test_ephemeral(self, project):
         results = run_dbt(["seed"])
         assert len(results) == 1
@@ -62,8 +62,8 @@ class TestEphemeraldoris(BaseEphemeral):
         check_relations_equal(project.adapter, ["base", "view_model", "table_model"])
     
 
-@pytest.mark.skip(reason="Incremental for doris table model bust be 'unique' ")
-class TestIncrementaldoris(BaseIncremental):
+@pytest.mark.skip(reason="Incremental for selectdb table model bust be 'unique' ")
+class TestIncrementalselectdb(BaseIncremental):
     def test_incremental(self, project):
         results = run_dbt(["seed"])
         assert len(results) == 2
@@ -77,18 +77,18 @@ class TestIncrementaldoris(BaseIncremental):
         assert len(results) == 1
         check_relations_equal(project.adapter, ["base", "incremental"])
 
-class TestGenericTestsdoris(BaseGenericTests):
+class TestGenericTestsselectdb(BaseGenericTests):
     pass
 
-@pytest.mark.skip(reason="Snapshot for doris table model bust be 'unique'")
-class TestSnapshotCheckColsdoris(BaseSnapshotCheckCols):
+@pytest.mark.skip(reason="Snapshot for selectdb table model bust be 'unique'")
+class TestSnapshotCheckColsselectdb(BaseSnapshotCheckCols):
     pass
 
-@pytest.mark.skip(reason="Snapshot for doris table model bust be 'unique'")
-class TestSnapshotTimestampdoris(BaseSnapshotTimestamp):
+@pytest.mark.skip(reason="Snapshot for selectdb table model bust be 'unique'")
+class TestSnapshotTimestampselectdb(BaseSnapshotTimestamp):
     pass
 
-class TestBaseAdapterMethoddoris(BaseAdapterMethod):
+class TestBaseAdapterMethodselectdb(BaseAdapterMethod):
     def test_adapter_methods(self, project, equal_tables):
         result = run_dbt()
         assert len(result) == 3

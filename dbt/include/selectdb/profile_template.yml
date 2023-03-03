@@ -1,0 +1,20 @@
+fixed:
+  type: selectdb
+prompts:
+  host:
+    hint: 'endpoint for your instance(your SelectDB Endpoint Details)'
+  port:
+    type: 'int'
+    hint: 'port for your instance(your SelectDB MySQL Protocol Port)'
+  schema:
+    default: 'dbt'
+    hint: 'the schema name as stored in the database,selectdb have not schema to make a collection of table or view'
+  username:
+    hint: 'your selectdb username(not your selectdb account login user)'
+  password:
+    hint: 'your selectdb password'
+    hide_input: true
+  threads:
+    hint: "1 or more"
+    type: "int"
+    default: 1

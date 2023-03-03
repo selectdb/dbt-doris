@@ -9,9 +9,9 @@ import agate
 import dbt.exceptions
 from dbt.adapters.base.impl import _expect_row_value, catch_as_completed
 from dbt.adapters.base.relation import InformationSchema, BaseRelation
-from dbt.adapters.doris.column import DorisColumn
-from dbt.adapters.doris.connections import DorisConnectionManager
-from dbt.adapters.doris.relation import DorisRelation
+from dbt.adapters.selectdb.column import SelectdbColumn
+from dbt.adapters.selectdb.connections import SelectdbConnectionManager
+from dbt.adapters.selectdb.relation import SelectdbRelation
 from dbt.adapters.protocol import AdapterConfig
 from dbt.adapters.sql.impl import LIST_RELATIONS_MACRO_NAME, LIST_SCHEMAS_MACRO_NAME
 from dbt.clients.agate_helper import table_from_rows
@@ -32,7 +32,7 @@ class PartitionType(str, Enum):
     list = "LIST"
     range = "RANGE"
 
-class DorisConfig(AdapterConfig):
+class SelectdbConfig(AdapterConfig):
     engine: Engine
     duplicate_key: Tuple[str]
     partition_by: Tuple[str]
@@ -42,11 +42,11 @@ class DorisConfig(AdapterConfig):
     buckets: int
     properties: Dict[str, str]
 
-class DorisAdapter(SQLAdapter):
-    ConnectionManager = DorisConnectionManager
-    Relation = DorisRelation
-    AdapterSpecificConfigs = DorisConfig
-    Column = DorisColumn
+class SelectdbAdapter(SQLAdapter):
+    ConnectionManager = SelectdbConnectionManager
+    Relation = SelectdbRelation
+    AdapterSpecificConfigs = SelectdbConfig
+    Column = SelectdbColumn
 
     @classmethod
     def date_function(cls) -> str:
@@ -84,7 +84,7 @@ class DorisAdapter(SQLAdapter):
             self.drop_relation(relation)
         super().drop_schema(relation)
 
-    def list_relations_without_caching(self, schema_relation: DorisRelation) -> List[DorisRelation]:
+    def list_relations_without_caching(self, schema_relation: SelectdbRelation) -> List[SelectdbRelation]:
         kwargs = {"schema_relation": schema_relation}
         results = self.execute_macro(LIST_RELATIONS_MACRO_NAME, kwargs=kwargs)
 
@@ -157,7 +157,7 @@ class DorisAdapter(SQLAdapter):
     ) -> agate.Table:
         if len(schemas) != 1:
             dbt.exceptions.raise_compiler_error(
-                f"Expected only one schema in Doris _get_one_catalog, found " f"{schemas}"
+                f"Expected only one schema in SelectDB _get_one_catalog, found " f"{schemas}"
             )
 
         return super()._get_one_catalog(information_schema, schemas, manifest)

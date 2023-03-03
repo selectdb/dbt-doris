@@ -1,4 +1,4 @@
-{% macro doris__get_columns_in_relation(relation) -%}
+{% macro selectdb__get_columns_in_relation(relation) -%}
     {% call statement('get_columns_in_relation', fetch_result=True) %}
         select column_name              as `column`,
        data_type                as 'dtype',
@@ -14,6 +14,6 @@ where table_schema = '{{ relation.schema }}'
 {%- endmacro %}
 
 
-{% macro doris__alter_column_type(relation,column_name,new_column_type) -%}
+{% macro selectdb__alter_column_type(relation,column_name,new_column_type) -%}
 '''Changes column name or data type'''
 {% endmacro %}
