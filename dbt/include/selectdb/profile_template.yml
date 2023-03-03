@@ -4,7 +4,6 @@ prompts:
   host:
     hint: 'endpoint for your instance(your SelectDB Endpoint Details)'
   port:
-    default: 9030
     type: 'int'
     hint: 'port for your instance(your SelectDB MySQL Protocol Port)'
   schema:
@@ -13,7 +12,7 @@ prompts:
   username:
     hint: 'your selectdb username(not your selectdb account login user)'
   password:
-    hint: 'your selectdb password, '
+    hint: 'your selectdb password'
     hide_input: true
   threads:
     hint: "1 or more"

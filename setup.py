@@ -3,7 +3,7 @@ from setuptools import find_namespace_packages, setup
 
 package_name = "dbt-selectdb"
 # make sure this always matches dbt/adapters/{adapter}/__version__.py
-package_version = "1.3.1"
+package_version = "0.1.0"
 dbt_core_version = "1.3.0"
 description = """The selectdb adapter plugin for dbt, Original code fork from Apache Doris"""
 

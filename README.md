@@ -13,7 +13,7 @@ This repo contains the base code to help you start to build out your dbt-selectd
 
 ** Note **
 ### Adapter Scaffold default Versioning
-This adapter plugin follows [semantic versioning](https://semver.org/). The first version of this plugin is v1.3.0, in order to be compatible with dbt Core v1.3.0.
+This adapter plugin follows [semantic versioning](https://semver.org/). The first version of this plugin is v0.1.0, in order to be compatible with dbt Core v1.3.0.
 
 It's also brand new! For selectdb-specific functionality, we will aim for backwards-compatibility wherever possible. We are likely to be iterating more quickly than most major-version-1 software projects. To that end, backwards-incompatible changes will be clearly communicated and limited to minor versions (once every three months).
 
