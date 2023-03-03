@@ -1,5 +1,5 @@
 
-{% macro doris__create_csv_table(model, agate_table) -%}
+{% macro selectdb__create_csv_table(model, agate_table) -%}
     {% set column_override = model['config'].get('column_types', {}) %}
     {% set quote_seed_column = model['config'].get('quote_columns', None) %}
 
@@ -13,11 +13,11 @@
         {{ adapter.quote_seed_column(column_name, quote_seed_column) }} {{ type }}{% if not loop.last %},{% endif %}
         {% endfor %}
     )
-    {{ doris__engine() }}
-    {{ doris__duplicate_key() }}
-    {{ doris__partition_by() }}
-    {{ doris__distributed_by(agate_table.column_names[0:1]) }}
-    {{ doris__properties() }}
+    {{ selectdb__engine() }}
+    {{ selectdb__duplicate_key() }}
+    {{ selectdb__partition_by() }}
+    {{ selectdb__distributed_by(agate_table.column_names[0:1]) }}
+    {{ selectdb__properties() }}
     {% endset %}
 
     {% call statement('_') %}

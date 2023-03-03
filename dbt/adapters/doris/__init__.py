@@ -1,13 +1,13 @@
-from dbt.adapters.doris.connections import DorisConnectionManager # noqa
-from dbt.adapters.doris.connections import DorisCredentials
-from dbt.adapters.doris.impl import DorisAdapter
+from dbt.adapters.selectdb.connections import SelectdbConnectionManager # noqa
+from dbt.adapters.selectdb.connections import SelectdbCredentials
+from dbt.adapters.selectdb.impl import SelectdbAdapter
 
 from dbt.adapters.base import AdapterPlugin
-from dbt.include import doris
+from dbt.include import selectdb
 
 
 Plugin = AdapterPlugin(
-    adapter=DorisAdapter,
-    credentials=DorisCredentials,
-    include_path=doris.PACKAGE_PATH
+    adapter=SelectdbAdapter,
+    credentials=SelectdbCredentials,
+    include_path=selectdb.PACKAGE_PATH
     )

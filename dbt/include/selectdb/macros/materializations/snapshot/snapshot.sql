@@ -1,9 +1,9 @@
-{% macro doris__snapshot_string_as_time(timestamp) -%}
+{% macro selectdb__snapshot_string_as_time(timestamp) -%}
   {%- set result = "str_to_date('" ~ timestamp ~ "', '%Y-%m-%d %T')" -%}
   {{ return(result) }}
 {%- endmacro %}
 
-{% macro doris__snapshot_merge_sql(target, source, insert_cols) -%}
+{% macro selectdb__snapshot_merge_sql(target, source, insert_cols) -%}
   {%- set insert_cols_csv = insert_cols | join(', ') -%}
   {%- set valid_to_col = adapter.quote('dbt_valid_to') -%}
 

@@ -1,4 +1,4 @@
-{% macro doris__list_relations_without_caching(schema_relation) -%}
+{% macro selectdb__list_relations_without_caching(schema_relation) -%}
   {% call statement('list_relations_without_caching', fetch_result=True) %}
     select
       null as "database",
@@ -13,7 +13,7 @@
   {{ return(load_result('list_relations_without_caching').table) }}
 {%- endmacro %}
 
-{% macro doris__get_catalog(information_schema, schemas) -%}
+{% macro selectdb__get_catalog(information_schema, schemas) -%}
     {%- call statement('catalog', fetch_result=True) -%}
     with tables as (
         select
@@ -65,10 +65,10 @@
 
 {%- endmacro %}
 
-{% macro doris__check_schema_exists(database, schema) -%}
+{% macro selectdb__check_schema_exists(database, schema) -%}
 {%- endmacro %}
 
-{% macro doris__list_schemas(database) -%}
+{% macro selectdb__list_schemas(database) -%}
     {% call statement('list_schemas', fetch_result=True, auto_begin=False) -%}
     select distinct schema_name from information_schema.schemata
     {%- endcall %}

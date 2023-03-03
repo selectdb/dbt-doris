@@ -13,10 +13,10 @@ pytest_plugins = ["dbt.tests.fixtures.project"]
 @pytest.fixture(scope="class")
 def dbt_profile_target():
         return {
-        "type": "doris",
+        "type": "selectdb",
         "threads": 1,
-        "host": os.getenv("DORIS_TEST_HOST", "127.0.0.1"),
-        "user": os.getenv("DORIS_TEST_USER", "root"),
-        "password": os.getenv("DORIS_TEST_PASSWORD", ""),
-        "port": os.getenv("DORIS_TEST_PORT", 9030),
+        "host": os.getenv("SELECTDB_TEST_HOST", "127.0.0.1"),
+        "user": os.getenv("SELECTDB_TEST_USER", "root"),
+        "password": os.getenv("SELECTDB_TEST_PASSWORD", ""),
+        "port": os.getenv("SELECTDB_TEST_PORT", 9030),
     }

@@ -1,7 +1,7 @@
 default:
   outputs:
     dev:
-      type: doris
+      type: selectdb
         host: <host>
         port: <port_num>
         username: <user>
