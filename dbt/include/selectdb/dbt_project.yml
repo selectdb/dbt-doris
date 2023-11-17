@@ -1,6 +1,0 @@
-name: dbt_selectdb
-version: 0.1.0
-config-version: 2
-
-macro-paths: ["macros"]
-clean-targets: [target, dbt_packages, logs]

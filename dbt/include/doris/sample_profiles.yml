@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
+default:
+  outputs:
+    dev:
+      type: doris
+        host: <host>
+        port: <port_num>
+        username: <user>
+        password: <pass>
+        database: <db>
+  target: dev
